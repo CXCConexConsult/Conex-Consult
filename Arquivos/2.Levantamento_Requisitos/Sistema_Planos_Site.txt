@@ -1,0 +1,46 @@
+Conex-Consult
+
+Ideias de planos na plataforma
+Planos Usuários Bronze
+	Anúncios na plataforma
+	1 Consultoria por mês fora da plataforma
+	Currículo ofuscado (sem dados de contato)
+	Porcentagem total em consultorias dentro da plataforma	 
+Planos Usuários Prata
+	Sem anúncios na plataforma.
+	5 Consultorias por mês fora da plataforma
+	Currículo ofuscado (sem dados de contato)
+	Desconto de 10% na taxa de negociações
+Planos Usuários Ouro
+	Sem anúncios na plataforma
+	10 Consultorias por mês fora da plataforma
+	Currículo aberto para consultores nível prata e ouro
+	Desconto de 30% na taxa de negociações
+	Suporte prioritário
+	Seus projetos de consultoria terão um booster no site (top projetos)
+Plano Usuário Diamante
+	Sem anúncios na plataforma
+	Consultorias ilimitadas por fora da plataforma
+	Currículo aberto para todos os níveis de consultores
+	Desconto de 50% na taxa de negociações
+	Suporte prioritário
+	Seus projetos de consultoria terão um booster no site (top projetos)
+
+Taxa 10% nas negociações
+
+
+Planos Consultor Bronze
+	Com anúncios na plataforma
+	Consultoria ilimitada no site
+	Currículo ofuscado (sem dados de contato)
+Planos Consultor Prata
+	Sem anúncios na plataforma
+	Consultoria ilimitada no site
+	Currículo aberto no site para usuários nível bronze
+	Suporte prioritário
+Plano Consultor Ouro
+	Sem anúncios na plataforma
+	Consultoria ilimitada no site
+	Currículo aberto para todos os níveis de usuários
+	Suporte prioritário
+	Seu currículo terá um booster no ranking do site	
