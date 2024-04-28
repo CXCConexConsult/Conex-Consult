@@ -1,3 +1,2 @@
 # Conex-Consult
-Projeto de Plataforma Web de Consultoria, onde buscamos fazer a ponte entre o usuário e os consultores.
-Nossa visão é ser o site referência de consultorias no Brasil. 
+Projeto de Plataforma Web de Vagas de emprego, com o diferencial de ser correspondência entre as competências do candidato e a vaga e vagas bem detalhadas no site.
