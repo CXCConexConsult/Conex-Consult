@@ -3,12 +3,15 @@
     margin: 0px;
     padding: 0px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
 :root {
     --azulEscuro: #100F1E;
     --azul: #2D2C55;
     --amarelo: #EFC406;
 }
 header {
+    position: fixed;
+    top: 0px;
     width: 100%;
     height: 118px;
     display: flex;
@@ -16,15 +19,16 @@ header {
     background-color: var(--azulEscuro);
 }
 header div#logo {
-    width: 400px;
+    width: 515px;
     height: 100%;
     padding: 13px 0px 13px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-header div img {
-    width: 100%;
-    height: 50;
+#logo_nome_CXC {
+    width: 383px;
+    height: 64px;
 }
 header nav {
     height: 100%;
@@ -32,9 +36,59 @@ header nav {
     display: flex;
     padding: 35px;
     justify-content: space-between;
+    align-items: center;
 }
 header nav a {
     color: var(--amarelo);
-    font: 24px normal inika;
+    font: normal 26px times;
     text-decoration: none;
+}
+main {
+    margin-top: 284px;
+}
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 636px;
+    height: 374px;
+    margin: 166px auto 30px 138px;
+}
+main section h1 {
+    font: bold 36px Arial;
+    color: var(--azulEscuro);
+    text-align: center;
+    margin:  0 0 38px 0;
+}
+main section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main > section > form > input.texto {
+    width: 515px;
+    height: 47px;
+    font: normal 20px arial;
+    padding: 10px;
+    margin: 0 0 26px 0 ;
+}
+main form input {
+    border-radius: 5px;
+}
+main input#btn_entrar {
+    width: 166px;
+    height: 48px;
+    background-color: var(--amarelo);
+    font: normal 24px arial;
+    margin: 0 0 26px 0;
+    border: none;
+    cursor: pointer;
+}
+main form p {
+    font: normal 20px arial;
+}
+main form p a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(167, 138, 12);
 }
