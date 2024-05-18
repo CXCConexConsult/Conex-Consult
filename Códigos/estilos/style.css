@@ -5,7 +5,7 @@
 }
 :root {
     --azulEscuro: #100F1E;
-    --azul: #2D2C55;
+    --azul: #2d2c55;
     --amarelo: #EFC406;
 }
 header {
@@ -43,7 +43,8 @@ header nav a {
     text-decoration: none;
 }
 main {
-    margin-top: 284px;
+    margin-top: 118px;
+    display: flex;
 }
 main section {
     display: flex;
@@ -52,6 +53,12 @@ main section {
     width: 636px;
     height: 374px;
     margin: 166px auto 30px 138px;
+}
+main div#fundo {
+    margin: 20px 0 20px 0px;
+}
+main div#fundo img {
+    width: 524px;
 }
 main section h1 {
     font: bold 36px Arial;
@@ -91,3 +98,28 @@ main form p a {
     text-decoration: none;
     color: rgb(167, 138, 12);
 }
+footer {
+    height: 154px;
+    background-image: linear-gradient(to right, var(--azulEscuro),var(--azul));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer div#links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px auto 20px 28px;
+}
+footer div#links a {
+    width: 193px;
+    font: normal 20px arial;
+    color: white;
+    display: flex;
+    text-decoration: none;
+}
+footer div#links img {
+    margin-right: 20px;
+}
+
