@@ -92,6 +92,7 @@ main input#btn_entrar {
 }
 main form p {
     font: normal 20px arial;
+    margin: 5px;
 }
 main form p a {
     font-weight: bold;
