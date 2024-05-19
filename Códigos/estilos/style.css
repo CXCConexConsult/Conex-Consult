@@ -46,9 +46,15 @@ header nav a {
     color: var(--amarelo);
     font: normal 26px times;
     text-decoration: none;
+    transition: 500ms;
+}
+header nav a:hover {
+    transition: 500ms;
+    color: #b19000;
 }
 main {
     display: flex;
+    min-height: calc(100vh - 236px);
 }
 main section {
     display: flex;
@@ -57,6 +63,7 @@ main section {
     width: 636px;
     height: 374px;
     margin: 166px auto 30px 138px;
+    padding-bottom: 118px;
 }
 main div#fundo {
     margin: 20px 0 20px 0px;
@@ -106,6 +113,11 @@ main input#btn_entrar {
     margin: 0 0 26px 0;
     border: none;
     cursor: pointer;
+    transition: 400ms;
+}
+main input#btn_entrar:hover {
+    transition: 400ms;
+    background-color: #cca600;
 }
 main form p {
     font: normal 20px arial;
@@ -116,22 +128,23 @@ main form p a {
     text-decoration: none;
     color: var(--azul);
 }
+main form p a:hover, #esqueciSenha a:hover{
+    color: black;
+}
 footer {
-    height: 154px;
+    height: 118px;
     width: 100%;
     background-image: linear-gradient(to right, var(--azulEscuro),var(--azul));
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    position: fixed;
-    bottom: 0px;
 }
 footer div#links {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 20px auto 20px 28px;
+    margin: 10px auto 10px 28px;
 }
 footer div#links a {
     width: 193px;
@@ -139,6 +152,13 @@ footer div#links a {
     color: white;
     display: flex;
     text-decoration: none;
+    transition: 400ms;
+}
+footer div#links a:hover {
+    background-color: #48487a74;
+    padding: 3px;
+    border-radius: 5px;
+    transition: 400ms;
 }
 footer div#links img {
     margin-right: 20px;
