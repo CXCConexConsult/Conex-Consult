@@ -8,9 +8,13 @@
     --azul: #2d2c55;
     --amarelo: #EFC406;
 }
+body {
+   height: 100vh;
+}
+html {
+    height: 100vh;
+}
 header {
-    position: fixed;
-    top: 0px;
     width: 100%;
     height: 118px;
     display: flex;
@@ -23,15 +27,16 @@ header div#logo {
     padding: 13px 0px 13px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
 }
 #logo_nome_CXC {
     width: 383px;
     height: 64px;
+    margin-bottom: 6px;
 }
 header nav {
     height: 100%;
-    width: 515px;
+    width: 400px;
     display: flex;
     padding: 35px;
     justify-content: space-between;
@@ -43,7 +48,6 @@ header nav a {
     text-decoration: none;
 }
 main {
-    margin-top: 118px;
     display: flex;
 }
 main section {
@@ -71,15 +75,28 @@ main section form {
     flex-direction: column;
     align-items: center;
 }
-main > section > form > input.texto {
-    width: 515px;
+main > section > form > input.campo {
+    width: 100%;
     height: 47px;
     font: normal 20px arial;
     padding: 10px;
     margin: 0 0 26px 0 ;
 }
+main form #senha {
+    margin: 0px;
+}
 main form input {
     border-radius: 5px;
+}
+main form div#areaEsqueciSenha {
+    width: 100%;
+    padding-left: 6px;
+    margin-bottom: 10px;
+}
+main form p#esqueciSenha a {
+    color: var(--azul);
+    font-size: 16px;
+    font-weight: bold;
 }
 main input#btn_entrar {
     width: 166px;
@@ -97,14 +114,17 @@ main form p {
 main form p a {
     font-weight: bold;
     text-decoration: none;
-    color: rgb(167, 138, 12);
+    color: var(--azul);
 }
 footer {
     height: 154px;
+    width: 100%;
     background-image: linear-gradient(to right, var(--azulEscuro),var(--azul));
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    position: fixed;
+    bottom: 0px;
 }
 footer div#links {
     height: 100%;
