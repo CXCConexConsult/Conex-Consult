@@ -1,5 +1,4 @@
-*
-{
+*{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -9,19 +8,11 @@
     --azul: #2d2c55;
     --amarelo: #EFC406;
 }
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f0f0f0;
-    padding: 20px;
 }
-
-
 html {
     height: 100vh;
 }
@@ -178,36 +169,5 @@ footer div#links a:hover {
 footer div#links img {
     margin-right: 20px;
 }
-@media (max-width: 768px) {
-   
-    
-    header div#logo {
-        transform: scale(0.7);
-    }
-    #logo_nome_CXC {
-        flex-direction: column;
-    }
-    #logo_nome_CXC {
-        transform: scale(0.7);
-    }
-    
-    header nav {
-        transform: scale(0.7);
-    }
-    header nav a { 
-        flex-direction: column;
-    }
 
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    main {
-        flex-direction: column;
-    }
-
-    main section {
-        flex: 1 1 45%;
-    }
-}
 
