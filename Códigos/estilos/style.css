@@ -79,6 +79,7 @@ main section {
     height: 374px;
     margin: 166px auto 30px 138px;
     padding-bottom: 118px;
+    transition: transform 0.3s ease;
 }
 main div#fundo {
     margin: 20px 0 20px 0px;
@@ -180,22 +181,30 @@ footer div#links img {
 }
 @media (max-width: 768px) {
    
+    header {
+        
+  
+    }
     
     header div#logo {
         transform: scale(0.7);
     }
     #logo_nome_CXC {
         flex-direction: column;
+    
     }
     #logo_nome_CXC {
         transform: scale(0.7);
     }
     
     header nav {
+        margin-right: 0%;
         transform: scale(0.7);
+        flex-direction:column-reverse
     }
     header nav a { 
-        flex-direction: column;
+        flex-direction: column;]
+        
     }
 
     nav ul li {
@@ -204,10 +213,17 @@ footer div#links img {
 
     main {
         flex-direction: column;
+        
     }
 
     main section {
         flex: 1 1 45%;
     }
+
+    main section {
+        transform: scale(0.7);
+    }
+
+    
 }
 
