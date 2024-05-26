@@ -181,8 +181,8 @@ footer div#links img {
 }
 @media (max-width: 768px) {
    
-    header {
-        
+    main div#fundo {
+        display: none;   
   
     }
     
@@ -199,11 +199,13 @@ footer div#links img {
     
     header nav {
         margin-right: 0%;
+        margin-bottom: 5px;
         transform: scale(0.7);
         flex-direction:column-reverse
     }
     header nav a { 
-        flex-direction: column;]
+        flex-direction: column;
+        align-items: flex-start;
         
     }
 
@@ -213,7 +215,7 @@ footer div#links img {
 
     main {
         flex-direction: column;
-        
+          
     }
 
     main section {
@@ -222,6 +224,9 @@ footer div#links img {
 
     main section {
         transform: scale(0.7);
+        align-items: flex-start;
+        margin-right: 0%;
+        margin-bottom: 5px;
     }
 
     
