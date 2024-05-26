@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+   
+    header div#logo {
+        transform: scale(0.7);
+    }
+    #logo_nome_CXC {
+        flex-direction: column;
+    }
+    #logo_nome_CXC {
+        transform: scale(0.7);
+    }
+    
+    header nav {
+        transform: scale(0.7);
+    }
+    header nav a { 
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main section {
+        flex: 1 1 45%;
+    }
+}
