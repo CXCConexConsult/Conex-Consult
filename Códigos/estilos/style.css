@@ -84,7 +84,7 @@ main div#fundo {
     width: 100%;
     max-width: 524px;
     min-width: 200px;
-    margin: auto 0 auto auto;
+    margin: 20px 0 auto auto;
 }
 main div#fundo img {
     width: 100%;
