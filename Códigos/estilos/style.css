@@ -32,12 +32,15 @@ header div#logo {
     padding: 13px 0px 13px 20px;
     display: flex;
     justify-content: space-between;
+    column-gap: 26px;
     align-items: end;
     transition: transform 0.4s ease;
 }
 #logo_nome_CXC {
-    width: 383px;
-    height: 64px;
+    max-width: 383px;
+    min-width: 300px;
+    width: 100%;
+    margin: auto;
     margin-bottom: 6px;
     transition: transform 0.3s ease;
 }
@@ -48,6 +51,7 @@ header nav {
     padding: 35px;
     justify-content: space-between;
     align-items: center;
+    column-gap: 10px;
     
 }
 header nav a {
@@ -71,7 +75,7 @@ main section {
     height: 374px;
     min-width: 298px;
     max-width: 636px;
-    margin: 166px auto 30px max(60px);
+    margin: 166px auto 30px 5vw;
     padding-bottom: 118px;
     transition: transform 0.3s ease;
 }
