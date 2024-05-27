@@ -9,18 +9,11 @@
     --azul: #2d2c55;
     --amarelo: #EFC406;
 }
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f0f0f0;
-    padding: 20px;
 }
-
 
 html {
     height: 100vh;
@@ -75,17 +68,25 @@ main section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 636px;
     height: 374px;
-    margin: 166px auto 30px 138px;
+    min-width: 298px;
+    max-width: 636px;
+    margin: 166px auto 30px max(60px);
     padding-bottom: 118px;
     transition: transform 0.3s ease;
 }
 main div#fundo {
     margin: 20px 0 20px 0px;
+    width: 100%;
+    max-width: 524px;
+    min-width: 200px;
+    margin: auto 0 auto auto;
 }
 main div#fundo img {
-    width: 524px;
+    width: 100%;
+    max-width: 524px;
+    min-width: 254px;
+    margin: auto;
 }
 main section h1 {
     font: bold 36px Arial;
