@@ -25,6 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: var(--azulEscuro);
+    margin-bottom: 50px;
 }
 header div#logo {
     width: 515px;
@@ -76,16 +77,15 @@ main section {
     height: 374px;
     min-width: 298px;
     max-width: 636px;
-    margin: 166px auto 50px 5vw;
+    margin: 0 auto 0 5vw;
     padding-bottom: 118px;
     transition: transform 0.3s ease;
 }
 main div#fundo {
-    margin: 20px 0 20px 0px;
     width: 100%;
     max-width: 524px;
     min-width: 200px;
-    margin: 20px 0 auto auto;
+    margin: auto 0 auto auto;
 }
 main div#fundo img {
     width: 100%;
