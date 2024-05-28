@@ -1,4 +1,16 @@
-# Conex-Consult
-![logo_ajustada](https://github.com/CXCConexConsult/Conex-Consult/assets/164801977/28111bf5-a008-45fe-8f34-ecd5b80e470b)
+<div align="center">
+    <img width = "imagem" title = "Logo da iamagem" src=imagens/logo_ajustada.jpg>
+</div>
+<h1 align="center">Conex-Consult</h1>
+Projeto de Plataforma Web de Vagas de vagas de emprego, com o diferencial de correspondência entre competências do candidato e competências da vaga.
 
-Projeto de Plataforma Web de Vagas de emprego, com o diferencial de ser correspondência entre as competências do candidato e a vaga e vagas bem detalhadas no site.
+Para acessar a nossa plataforma, basta acessar o link a seguir: https://www.conexconsult.com.br/
+
+Tecnologias utilizadas no site:
+
+*HTML
+*CSS
+*JavaScript
+
+
+
