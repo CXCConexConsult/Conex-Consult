@@ -8,9 +8,15 @@ Para acessar a nossa plataforma, basta acessar o link a seguir: https://www.cone
 
 Tecnologias utilizadas no site:
 
-*HTML
-*CSS
-*JavaScript
+- HTML
+- CSS
+- JavaScript
+- Python
+- PostgreSQL
+
+<h>Status do Projeto</h>
+
+
 
 
 
