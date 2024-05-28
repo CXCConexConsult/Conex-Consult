@@ -2,7 +2,7 @@
     <img width = "imagem" title = "Logo da iamagem" src=imagens/logo_ajustada.jpg>
 </div>
 <h1 align="center">Conex-Consult</h1>
-Projeto de Plataforma Web de Vagas de vagas de emprego, com o diferencial de correspondência entre competências do candidato e competências da vaga.
+<p align="left">Projeto de Plataforma Web de Vagas de vagas de emprego, com o diferencial de correspondência entre competências do candidato e competências da vaga.</p>
 
 Para acessar a nossa plataforma, basta acessar o link a seguir: https://www.conexconsult.com.br/
 
@@ -14,7 +14,16 @@ Tecnologias utilizadas no site:
 - Python
 - PostgreSQL
 
-<h>Status do Projeto</h>
+
+
+<p align="left">
+<figure>
+    <img src=imagens/flag.png width=25> Status do Projeto
+</figure>
+</p>
+
+
+
 
 
 
