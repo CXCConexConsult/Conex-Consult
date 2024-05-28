@@ -67,6 +67,7 @@ header nav a:hover {
 main {
     display: flex;
     min-height: calc(100vh - 236px);
+    align-items: center;
 }
 main section {
     display: flex;
@@ -75,7 +76,7 @@ main section {
     height: 374px;
     min-width: 298px;
     max-width: 636px;
-    margin: 166px auto 30px 5vw;
+    margin: 166px auto 50px 5vw;
     padding-bottom: 118px;
     transition: transform 0.3s ease;
 }
@@ -159,6 +160,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 45px;
 }
 footer div#links {
     height: 100%;
