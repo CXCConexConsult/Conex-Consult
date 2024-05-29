@@ -53,7 +53,6 @@ header nav {
     justify-content: space-between;
     align-items: center;
     column-gap: 10px;
-    
 }
 header nav a {
     color: var(--amarelo);
@@ -188,55 +187,5 @@ footer div#links a:hover {
 footer div#links img {
     margin-right: 20px;
 }
-@media (max-width: 768px) {
-   
-    main div#fundo {
-        display: none;   
-    }
-    
-    header div#logo {
-        transform: scale(0.7);
-    }
-    #logo_nome_CXC {
-        flex-direction: column;
-    
-    }
-    #logo_nome_CXC {
-        transform: scale(0.7);
-    }
-    
-    header nav {
-        margin-right: 0%;
-        margin-bottom: 5px;
-        transform: scale(0.7);
-        flex-direction:column-reverse
-    }
-    header nav a { 
-        flex-direction: column;
-        align-items: flex-start;
-        
-    }
 
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    main {
-        flex-direction: column;
-          
-    }
-
-    main section {
-        flex: 1 1 45%;
-    }
-
-    main section {
-        transform: scale(0.7);
-        align-items: flex-start;
-        margin-right: 0%;
-        margin-bottom: 5px;
-    }
-
-    
-}
 
