@@ -1,5 +1,4 @@
-*
-{
+*{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -9,6 +8,7 @@
     --azul: #2d2c55;
     --amarelo: #EFC406;
 }
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -105,6 +105,9 @@ main section form {
     flex-direction: column;
     align-items: center;
 }
+main section label {
+    width: 100%;
+}
 main input.campo {
     width: 100%;
     height: 47px;
@@ -120,7 +123,6 @@ main form input {
 }
 main form div#areaEsqueciSenha {
     width: 100%;
-    padding-left: 6px;
     margin-bottom: 10px;
 }
 main form p#esqueciSenha a {
@@ -144,7 +146,6 @@ main input#btn_entrar:hover {
 }
 main form p {
     font: normal 20px arial;
-    margin: 5px;
 }
 main form p a {
     font-weight: bold;
@@ -186,6 +187,9 @@ footer div#links a:hover {
 }
 footer div#links img {
     margin-right: 20px;
+}
+footer div#fundoContainer {
+    display: none;
 }
 
 
