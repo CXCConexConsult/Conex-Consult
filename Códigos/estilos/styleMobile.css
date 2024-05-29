@@ -4,6 +4,8 @@
         display: block;
         height: 141px;
         padding-bottom: 20px;
+        padding: 0;
+        align-items: center;
     }
     header nav {
         display: flex;
@@ -14,6 +16,7 @@
     header div#logo {
         padding: 0;
         height: min-content;
+        margin: auto;
     }
    
     main div#fundo {
@@ -28,7 +31,7 @@
     
     }
     #logo_nome_CXC {
-        transform: scale(0.7);
+        /* transform: scale(0.7); */
     }
     
     header nav {
