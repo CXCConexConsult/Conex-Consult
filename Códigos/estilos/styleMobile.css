@@ -24,23 +24,24 @@
         align-items: center;
         column-gap: 10px;
         height: min-content;
-        margin: 10px;
+        margin-top: 18px;
         padding: 0 10px;
     }
     header #logo_CXC {
-        max-width: 70px;
+        max-width: 65px;
         min-width: 50px;
     }
     header #logo_nome_CXC {
-        max-width: 320px;  
-        margin: 15px 0 0 0;
+        max-width: 260px;  
+        margin: 10px 0 0 0;
     }
     header nav {
         margin-right: 0%;
-        margin-bottom: 5px;
-        /* transform: scale(0.7); */
+        margin-bottom: 7px;
     }
     header nav a { 
+        font-size: 20px;
+        font-weight: normal;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -58,7 +59,7 @@
     main div#containerCadastro {
         justify-content: center;
         flex-direction: column;
-        margin: 0 20px;
+        margin: 0 40px;
     }
     main section {
         flex: 1 1 45%;
@@ -106,13 +107,14 @@
         margin: -58px 10px 0 10px;
     }
 } 
-@media (max-width: 380px) {
+@media (max-width: 406px) {
     header nav a {
         font-size: 20px;
     }
 
     main section h1 {
         font-size: 25px;
+        margin-bottom: 20px;
     }
 
     footer div#links {

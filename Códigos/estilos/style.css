@@ -187,7 +187,10 @@ footer div#links a:hover {
     transition: 400ms;
 }
 footer div#links img {
-    margin-right: 20px;
+    margin-right: 10px;
+}
+footer div#links #img_linkedin p {
+    padding-top: 2px;
 }
 footer #img_mulher {
     display: none;
