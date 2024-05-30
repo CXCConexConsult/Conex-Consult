@@ -178,6 +178,7 @@ footer div#links a {
     display: flex;
     text-decoration: none;
     transition: 400ms;
+    text-align: center;
 }
 footer div#links a:hover {
     background-color: #48487a74;
@@ -188,7 +189,7 @@ footer div#links a:hover {
 footer div#links img {
     margin-right: 20px;
 }
-footer div#fundoContainer {
+footer #img_mulher {
     display: none;
 }
 

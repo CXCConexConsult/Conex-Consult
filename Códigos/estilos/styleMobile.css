@@ -53,7 +53,7 @@
     }
     main {
         flex-direction: column;  
-        min-height: calc(100vh - 319px);   
+        min-height: calc(100vh - 359px);   
     }
     main div#containerCadastro {
         justify-content: center;
@@ -85,17 +85,25 @@
     footer {
         margin-top: 70px;
         flex-direction: row;
+        background-image: linear-gradient(to right, var(--azulEscuro), #252244);
     }
+    footer div#links {
+        height: auto;
+    }
+    
     footer div#fundoContainer {
         display: flex;
         justify-content: center;
-        width: 175px;
+        width: min-content;
     }
-    footer div#fundoContainer img {
-        width: 100%;
-        max-width: 118px;
-        min-width: 80px;
-        position: relative;
+    footer #img_mulher {
+        display: block;
+        max-width: 120px;
+        min-width: 100px;
+        max-height: 175px;
+        width: auto;
+        height: auto;
+        margin: -58px 10px 0 10px;
     }
 } 
 @media (max-width: 380px) {
@@ -108,7 +116,21 @@
     }
 
     footer div#links {
-        transform: scale(0.8);
-        margin: 0;
+        margin-left: 8px;
+    }
+    footer div#links p {
+        font-size: 16px;
+    }
+    footer div#links img {
+        width: 18px;
+        margin-right: 5px;
+    }
+    footer div#links a {
+        width: fit-content;
+    }
+}
+@media (max-width: 313px) {
+    main section h1 {
+        margin-bottom: 25px;
     }
 }
