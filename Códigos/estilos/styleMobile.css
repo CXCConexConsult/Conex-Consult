@@ -95,6 +95,7 @@
         width: 100%;
         max-width: 118px;
         min-width: 80px;
+        position: relative;
     }
 } 
 @media (max-width: 380px) {
