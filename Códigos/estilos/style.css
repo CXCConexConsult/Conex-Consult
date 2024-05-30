@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: var(--azulEscuro);
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 header div#logo {
     width: 515px;
@@ -65,7 +65,7 @@ header nav a:hover {
     color: #b19000;
 }
 main {
-    min-height: calc(100vh - 236px);
+    min-height: calc(100vh - 286px);
 }
 main div#containerCadastro {
     display: flex;
@@ -162,7 +162,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 45px;
+    margin-top: 25px;
 }
 footer div#links {
     height: 100%;
@@ -193,4 +193,17 @@ footer #img_mulher {
     display: none;
 }
 
+@media screen and (min-width: 1900px) and (min-height: 1360px) {
 
+    main {
+        min-height: calc(100vh - 286px);
+    }
+    main section {
+        transform: scale(1.4);
+        margin-left: 210px;
+    }
+    main div#fundo {
+        transform: scale(1.4);
+        margin: 200px 105px 0 0;
+    }
+}
