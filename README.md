@@ -18,7 +18,7 @@ Tecnologias utilizadas no site:
 
 <p align="left">
 <div>
-    <img  width=25 src=flag.png > Status do Projeto
+    <img  width=15 src=flag.jpg>Status do Projeto
 </div>
 </p>
 
