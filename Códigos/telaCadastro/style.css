@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --azulEscuro: #100F1E;
+    --azul: #2d2c55;
+    --amarelo: #EFC406;
+}
+
+main {
+    min-height: calc(100vh - 273px);
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    font: 700 20px arial;
+}
+main section form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: flex-start !important;
+    justify-content: left;
+}
+form label {
+    display: flex;
+    flex-direction: column;
+    width: 303px;
+    font: 300 16px arial;
+    margin-bottom: 13px;
+}
+form input {
+    height: 36px;  
+    background-color: rgba(0, 0, 0, 0.06);
+    margin-top: 2px;
+}
+form div#local {
+    display: flex;
+    flex-direction: row;
+    gap: 71px; 
+}
+#labelCidade {
+    width: 170px;
+}
+#labelUf {
+    width: 118px;
+}
+#labelCpf {
+    width: 224px;
+}
+#btnCadastrar {
+    font: 700 20px arial;
+    width: 347px;
+    height: 56px;
+    margin: 71px auto;
+    background-color: var(--amarelo);
+}

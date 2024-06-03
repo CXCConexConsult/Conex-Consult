@@ -11,16 +11,38 @@ Tecnologias utilizadas no site:
 - HTML
 - CSS
 - JavaScript
+- React
 - Python
 - PostgreSQL
+- Github Pages
 
 
 
-<p align="left">
+<h2 align="left">
 <div>
-    <img  width=25 src=flag.png > Status do Projeto
+    <img  width=15 src=flag.jpg>         Status do Projeto
 </div>
-</p>
+</h2>
+<h4 align = "left">
+   🚧 Em construção...  🚧
+</h4>
+
+<h2 align="left">
+<div>
+    <img  width=15 src=flag.jpg>         Features
+</div>
+</h2>
+
+- [ ] Desenvolvimento Tela Inicial
+- [ ] Prototipação Tela Cadastro
+- [ ] Responsividade das páginas
+
+<h2 align="left">
+<div>
+    <img  width=15 src=flag.jpg>         Demonstração
+</div>
+</h2>
+
 
 
 
