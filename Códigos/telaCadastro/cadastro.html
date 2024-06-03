@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>É novo por aqui? Cadastre-se abaixo.</h1>
+    <form>
+        <label for="nome">
+            Nome completo
+            <input type="text" name="nome" id="nome">
+        </label>
+        <div id="local">
+            <label id="labelCidade" for="cidade">
+                Cidade
+                <input type="text" name="cidade" id="cidade">
+            </label>
+            <label id="labelUf" for="uf">
+                UF
+                <input type="text" name="uf" id="uf">
+            </label>
+        </div>
+        <label id="labelCpf" for="cpf">
+            CPF
+            <input type="number" name="cpf" id="cpf">
+        </label>
+        <label for="email">
+            E-mail
+            <input type="email" name="email" id="email">
+        </label>
+        <label for="senha">
+            Senha
+            <input type="password" name="senha" id="senha">
+        </label>
+        <input id="btnCadastrar" type="submit" value="Cadastrar-se">
+    </form>
+</body>
+</html>
