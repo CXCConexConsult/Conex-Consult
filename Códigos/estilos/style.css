@@ -20,12 +20,15 @@ html {
 }
 
 header {
+    position: fixed;
+    top: 0%;
     width: 100%;
     height: 118px;
     display: flex;
     justify-content: space-between;
     background-color: var(--azulEscuro);
     margin-bottom: 25px;
+    transition: top 0.3s;
 }
 header div#logo {
     width: 515px;
@@ -194,6 +197,10 @@ footer div#links #img_linkedin p {
 }
 footer #img_mulher {
     display: none;
+}
+
+.header-hidden {
+    top: -117px; /* Ajuste este valor conforme a altura do seu cabeçalho */
 }
 
 @media screen and (min-width: 1900px) and (min-height: 1360px) {
