@@ -14,6 +14,7 @@ Tecnologias utilizadas no site:
 - React
 - Python
 - PostgreSQL
+- Github Pages
 
 
 
