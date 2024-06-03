@@ -43,6 +43,9 @@ Tecnologias utilizadas no site:
 </div>
 </h2>
 
+<div align="center">
+    <img width = "imagem" title = "Logo Index" src=imagens/Index.jpg>
+</div>
 
 
 
