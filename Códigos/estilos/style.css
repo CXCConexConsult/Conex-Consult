@@ -67,7 +67,7 @@ header nav a:hover {
 main {
     min-height: calc(100vh - 286px);
 }
-main div#containerCadastro {
+main div.containerCadastro {
     display: flex;
     flex-direction: row;
     align-items: center;

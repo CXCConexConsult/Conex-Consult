@@ -8,17 +8,22 @@
     --azul: #2d2c55;
     --amarelo: #EFC406;
 }
-body {
-    padding: 11px;
+
+main {
+    min-height: calc(100vh - 273px);
 }
+
 h1 {
     text-align: center;
     margin: 20px;
     font: 700 20px arial;
 }
-form {
+main section form {
     display: flex;
     flex-direction: column;
+    margin: 20px;
+    align-items: flex-start !important;
+    justify-content: left;
 }
 form label {
     display: flex;
