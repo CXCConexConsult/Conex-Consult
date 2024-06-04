@@ -68,6 +68,7 @@ header nav a:hover {
     color: #b19000;
 }
 main {
+    margin-top: 180px;
     min-height: calc(100vh - 286px);
 }
 main div.containerCadastro {

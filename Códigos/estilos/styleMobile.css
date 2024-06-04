@@ -56,7 +56,7 @@
         flex-direction: column;  
         min-height: calc(100vh - 359px);   
     }
-    main div#containerCadastro {
+    main div.containerCadastro {
         justify-content: center;
         flex-direction: column;
         margin: 0 40px;
