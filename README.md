@@ -1,5 +1,5 @@
 <div align="center">
-    <img width = "imagem" title = "Logo da iamagem" src=imagens/logo_ajustada.jpg>
+    <img width = "imagem" title = "Logo da iamagem" src=imagens/flag.jpg>
 </div>
 <h1 align="center">Conex-Consult</h1>
 <p align="left">Projeto de Plataforma Web de Vagas de vagas de emprego, com o diferencial de correspondência entre competências do candidato e competências da vaga.</p>
@@ -20,7 +20,7 @@ Tecnologias utilizadas no site:
 
 <h2 align="left">
 <div>
-    <img  width=15 src=flag.jpg>         Status do Projeto
+    <img  width=15 src=imagens/flag.jpg>         Status do Projeto
 </div>
 </h2>
 <h4 align = "left">
@@ -29,7 +29,7 @@ Tecnologias utilizadas no site:
 
 <h2 align="left">
 <div>
-    <img  width=15 src=flag.jpg>         Features
+    <img  width=15 src=imagens/flag.jpg>         Features
 </div>
 </h2>
 
@@ -39,7 +39,7 @@ Tecnologias utilizadas no site:
 
 <h2 align="left">
 <div>
-    <img  width=15 src=flag.jpg>         Demonstração
+    <img  width=15 src=imagens/flag.jpg>         Demonstração
 </div>
 </h2>
 
