@@ -54,7 +54,7 @@
     }
     main {
         flex-direction: column;  
-        min-height: calc(100vh - 359px);   
+        min-height: calc(100vh - 368px);   
     }
     main div.containerCadastro {
         justify-content: center;
@@ -63,7 +63,6 @@
     }
     main section {
         flex: 1 1 45%;
-        /* transform: scale(0.7); */
         width: 100%;
         min-width: 260px;
         max-width: 527px;

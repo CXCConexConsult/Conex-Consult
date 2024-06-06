@@ -1,4 +1,5 @@
- let lastScrollTop = 0;
+//Configurações header dinâmico:
+let lastScrollTop = 0;
 const header = document.getElementById('header');
 
 window.addEventListener('scroll', function() {
@@ -15,12 +16,13 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop;
 }); 
 
+
 let imgFundo = document.querySelector("#img_fundo")
  let tela = document.querySelector("html")
  function marginFundo() {
      console.log(tela.offsetWidth)
      if (tela.offsetWidth < 1156) {
-         imgFundo.style.marginTop = "80px"
+         imgFundo.style.marginTop = "70px"
          console.log(imgFundo.style.marginTop)
      }else {
          imgFundo.style.marginTop = '0'
