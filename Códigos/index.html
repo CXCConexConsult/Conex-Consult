@@ -20,7 +20,7 @@
         <nav>
             <a id="contato" href="">Contato</a>
             <a id="vagas" href="">Vagas</a>
-            <a id="navCadastrar" class="cadastrar" href="../Códigos/telaCadastro/cadastro.html" target="_self">Cadastrar</a>
+            <a id="navCadastrar" class="cadastrar"  target="_self">Cadastrar</a>
         </nav>
     </header>
     <main>
@@ -41,7 +41,7 @@
                     </div>
                     <input type="submit" id="btn_entrar"
                     class="input"  value="Entrar">
-                    <p id="Pcadastro" class="cadastrar">Ainda não possui conta na plataforma? <a href="">Faça seu cadastro</a></p>
+                    <p id="Pcadastro" >Ainda não possui conta na plataforma? <a class="cadastrar">Faça seu cadastro</a></p>
                 </form>
             </section>
             <div id="fundo">
@@ -56,16 +56,45 @@
         </div>
         <img src="../imagens/mulher.png" id="img_mulher" alt="mulher buscando uma vaga no tablet">
     </footer>
-    <div id="myModal" class="modal">
+
+    <!-- Pop Up -->
+    <div id="myModal" class="modal hideModal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Cadastro</h2>
+        <h1>É novo por aqui? Cadastre-se abaixo</h1>
             <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome"><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <input type="submit" value="Cadastrar">
+                <label for="nome">
+                    Nome completo
+                    <input type="text" name="nome" id="nome">
+                </label>
+                <div id="local">
+                    <label id="labelCidade" for="cidade">
+                        Cidade
+                        <input type="text" name="cidade" id="cidade">
+                    </label>
+                    <label id="labelUf" for="uf">
+                        UF
+                        <input type="text" name="uf" id="uf">
+                    </label>
+                </div>
+                <div id="cpfAndData">
+                    <label id="labelCpf" for="cpf">
+                        CPF
+                        <input type="number" name="cpf" id="cpf">
+                    </label>
+                    <label for="dataNascimento" id="labelData">
+                        Data de Nascimento
+                        <input type="date" name="dataNascimento" id="dataNascimento">
+                    </label>
+                </div>
+                <label for="email">
+                    E-mail
+                    <input type="email" name="email" id="emailCadastro">
+                </label>
+                <label for="senha">
+                    Senha
+                    <input type="password" name="senha" id="senhaCadastro">
+                </label>
+                <input id="btnCadastrar" type="submit" value="Cadastrar-se">
             </form>
         </div>
     </div>

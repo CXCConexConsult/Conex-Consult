@@ -67,6 +67,9 @@ header nav a:hover {
     transition: 500ms;
     color: #b19000;
 }
+a.cadastrar {
+    cursor: pointer;
+}
 main {
     margin-top: 180px;
     min-height: calc(100vh - 323px);
@@ -222,5 +225,85 @@ footer #img_mulher {
 /* Comfigurações Pop-Up */
 
 div.modal {
+    background-color: rgba(0, 0, 0, 0.351);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+div.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    padding: 20px 20px 0 20px;
+    box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.28);
+    border-radius: 10px;
+}
+div.modal-content h1 {
+    width: 300px;
+    text-align: center;
+}
+div.modal-content form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: flex-start !important;
+    justify-content: left;
+}
+div.modal-content form label {
+    display: flex;
+    flex-direction: column;
+    width: 303px;
+    font: 300 16px arial;
+    margin-bottom: 13px;
+}
+
+div.modal-content form input {
+    height: 36px;  
+    background-color: rgba(0, 0, 0, 0.06);
+    margin-top: 2px;
+    padding: 5px;
+}
+div.modal-content form div#local {
+    display: flex;
+    flex-direction: row;
+    gap: 71px; 
+}
+div.modal-content div#cpfAndData {
+    display: flex;
+    gap: 71px;
+}
+div.modal-content #labelData {
+    width: 118px;
+}
+div.modal-content #labelCidade {
+    width: 170px;
+}
+#dataNascimento {
+    width: 118px;
+}
+#labelUf {
+    width: 118px;
+}
+#labelCpf {
+    width: 170px;
+}
+#btnCadastrar {
+    font: 700 20px arial;
+    width: 347px;
+    height: 56px;
+    margin: 30px auto;
+    background-color: var(--amarelo);
+    cursor: pointer;
+}
+div.hideModal {
     display: none;
+    transition: 2s;
 }

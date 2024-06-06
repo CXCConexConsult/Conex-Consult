@@ -16,7 +16,7 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop;
 }); 
 
-
+//Ajuste do margin do fundo conforme o tamanho da tela
 let imgFundo = document.querySelector("#img_fundo")
  let tela = document.querySelector("html")
  function marginFundo() {
@@ -32,5 +32,17 @@ let imgFundo = document.querySelector("#img_fundo")
      marginFundo()
  })
  window.onload = marginFundo()
+
+ //Pop Up
+let btnCadastro = document.querySelectorAll(".cadastrar")
+btnCadastro.forEach((e)=>{
+    e.addEventListener('click',modal)
+})
+function modal(){ 
+    let form = document.querySelector("#myModal")
+    console.log(form.classList)
+    form.classList.remove("hideModal")
+}
+
 
 
