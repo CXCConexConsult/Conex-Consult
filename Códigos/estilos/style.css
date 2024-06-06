@@ -69,7 +69,7 @@ header nav a:hover {
 }
 main {
     margin-top: 180px;
-    min-height: calc(100vh - 286px);
+    min-height: calc(100vh - 323px);
 }
 main div.containerCadastro {
     display: flex;
@@ -217,4 +217,10 @@ footer #img_mulher {
         transform: scale(1.4);
         margin: 200px 105px 0 0;
     }
+}
+
+/* Comfigurações Pop-Up */
+
+div.modal {
+    display: none;
 }
