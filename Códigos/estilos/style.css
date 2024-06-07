@@ -274,23 +274,23 @@ div.modal-content form input {
 div.modal-content form div#local {
     display: flex;
     flex-direction: row;
-    gap: 71px; 
+    gap: 31px; 
 }
 div.modal-content div#cpfAndData {
     display: flex;
-    gap: 71px;
+    gap: 31px;
 }
 div.modal-content #labelData {
-    width: 118px;
+    width: 145px;
 }
 div.modal-content #labelCidade {
     width: 170px;
 }
 #dataNascimento {
-    width: 118px;
+    width: 143px;
 }
 #labelUf {
-    width: 118px;
+    width: 143px;
 }
 #labelCpf {
     width: 170px;
