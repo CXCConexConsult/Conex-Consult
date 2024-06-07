@@ -260,7 +260,7 @@ div.modal-content form {
 div.modal-content form label {
     display: flex;
     flex-direction: column;
-    width: 303px;
+    width: 345px;
     font: 300 16px arial;
     margin-bottom: 13px;
 }
@@ -274,17 +274,17 @@ div.modal-content form input {
 div.modal-content form div#local {
     display: flex;
     flex-direction: row;
-    gap: 31px; 
+    gap: 21px; 
 }
 div.modal-content div#cpfAndData {
     display: flex;
-    gap: 31px;
+    gap: 21px;
 }
 div.modal-content #labelData {
     width: 145px;
 }
 div.modal-content #labelCidade {
-    width: 170px;
+    width: 180px;
 }
 #dataNascimento {
     width: 143px;
@@ -293,7 +293,7 @@ div.modal-content #labelCidade {
     width: 143px;
 }
 #labelCpf {
-    width: 170px;
+    width: 180px;
 }
 #btnCadastrar {
     font: 700 20px arial;
