@@ -20,10 +20,8 @@ window.addEventListener('scroll', function() {
 let imgFundo = document.querySelector("#img_fundo")
  let tela = document.querySelector("html")
  function marginFundo() {
-     console.log(tela.offsetWidth)
      if (tela.offsetWidth < 1156) {
          imgFundo.style.marginTop = "70px"
-         console.log(imgFundo.style.marginTop)
      }else {
          imgFundo.style.marginTop = '0'
      }
@@ -35,14 +33,27 @@ let imgFundo = document.querySelector("#img_fundo")
 
  //Pop Up
 let btnCadastro = document.querySelectorAll(".cadastrar")
+let btnClose = document.querySelector("#btnClose")
+let form = document.querySelector("#myModal")
+let html = document.querySelector("html")
+btnClose.addEventListener('click',(e)=>{
+    form.classList.add("hideModal")
+})
 btnCadastro.forEach((e)=>{
     e.addEventListener('click',modal)
 })
 function modal(){ 
-    let form = document.querySelector("#myModal")
-    console.log(form.classList)
     form.classList.remove("hideModal")
 }
+
+window.addEventListener('load',modalResize)
+window.addEventListener('resize',modalResize)
+
+function modalResize(){
+    let form = document.querySelector("#myModal")
+    form.style.height = html.offsetHeight+"px"
+}
+
 
 
 

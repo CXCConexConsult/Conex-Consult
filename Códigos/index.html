@@ -14,8 +14,7 @@
             <img src="../imagens/logo.png" id="logo_CXC" alt="logo_CXC">
            <a href="index.html">
              <img src="../imagens/logo_nome.png" id="logo_nome_CXC" alt="logo_nome_CXC"> 
-           </a>
-           
+           </a>   
         </div>
         <nav>
             <a id="contato" href="">Contato</a>
@@ -60,13 +59,14 @@
     <!-- Pop Up -->
     <div id="myModal" class="modal hideModal">
         <div class="modal-content">
+        <span><img src="../imagens/closeButton.png" alt="botão fechar" id="btnClose"></span>
         <h1>É novo por aqui? Cadastre-se abaixo</h1>
             <form>
                 <label for="nome">
                     Nome completo
                     <input type="text" name="nome" id="nome">
                 </label>
-                <div id="local">
+                <div id="local" class="campo">
                     <label id="labelCidade" for="cidade">
                         Cidade
                         <input type="text" name="cidade" id="cidade">
@@ -76,7 +76,7 @@
                         <input type="text" name="uf" id="uf">
                     </label>
                 </div>
-                <div id="cpfAndData">
+                <div id="cpfAndData" class="campo">
                     <label id="labelCpf" for="cpf">
                         CPF
                         <input type="number" name="cpf" id="cpf">

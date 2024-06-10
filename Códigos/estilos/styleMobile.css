@@ -105,7 +105,42 @@
         height: auto;
         margin: -58px 10px 0 10px;
     }
-} 
+}
+
+/* Pop-up */
+@media (max-width: 470px) {
+    div.modal-content {
+        width: 99vw;
+        padding: 0;
+    }
+    div.modal-content form {
+        max-width: 350px;
+        min-width: 230px;
+        width: 100%;
+        padding: 10px;
+    }
+    div.modal-content div {
+        max-width: 350px;
+    }
+    div.modal-content form label {
+        width: 100%;
+    }
+    div.modal-content div#local {
+        width: 100%;
+        justify-content: space-between
+    }
+    div.modal-content #labelUf {
+        max-width: 50px;
+        width: 100%;
+    }
+    #labelCpf {
+        width: 100%;
+    }
+    div.modal-content div#cpfAndData {
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+}
 @media (max-width: 406px) {
     header nav a {
         font-size: 20px;
