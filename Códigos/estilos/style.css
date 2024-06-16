@@ -235,7 +235,7 @@ footer #img_mulher {
 
 div.modal {
     background-color: rgba(0, 0, 0, 0.351);
-    width: 100vw;
+    width: calc(100%);
     height: 100vh;
     position: absolute;
     top: 0;
@@ -287,6 +287,7 @@ div.modal-content form label {
 div.modal-content form input {
     height: 36px;  
     background-color: rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
     margin-top: 2px;
     padding: 5px;
 }
@@ -304,14 +305,29 @@ div.modal-content #labelData {
 }
 div.modal-content #labelCidade {
     max-width: 180px;
+}
+div.modal-content input #cidade {
     text-transform: uppercase;
 }
 #labelUf {
     max-width: 143px;
     text-transform: uppercase;
 }
+#campo-senha {
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+input:focus-visible {
+    outline: none;
+}
+#senhaCadastro {
+    width: 306px;
+    border: none;
+    padding: 0 5px;
+    margin: 0;
+}
 .toggle-password {
-   
     right: 10px;
     cursor: pointer;
     user-select: none;

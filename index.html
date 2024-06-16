@@ -61,7 +61,7 @@
     </footer>
 
     <!-- Pop Up -->
-    <div id="myModal" class="modal hideModal">
+    <div id="myModal" class="modal">
         <div class="modal-content">
         <span><img src="imagens/closeButton.png" alt="botão fechar" id="btnClose"></span>
         <h1>É novo por aqui? Cadastre-se abaixo</h1>
@@ -86,10 +86,12 @@
                     <input type="email" name="email" id="emailCadastro">
                 </label>
                 
-                <label for="senha">
+                <label for="senha" id="label-senha">
                     Senha
-                    <input id="senhaCadastro" type="password" name="senha" id="senhaCadastro">
-                    <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                    <div id="campo-senha">
+                        <input id="senhaCadastro" type="password" name="senha" id="senhaCadastro">
+                        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                    </div>
                 </label>
                 <input id="btnCadastrar" type="submit" value="Cadastrar-se">
             </form>
