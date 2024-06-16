@@ -249,6 +249,7 @@ div.modal-content {
     flex-direction: column;
     align-items: center;
     background-color: white;
+    width: 400px;
     max-width: 400px;
     margin: auto;
     padding: 20px 20px 0 20px;
@@ -264,7 +265,6 @@ div.modal-content span.span-close {
 div.modal-content span #btnClose {
     width: 20px;
     cursor: pointer;
-    margin: 0;
 }
 div.modal-content h1 {
     max-width: 300px;
@@ -275,11 +275,11 @@ div.modal-content form {
     flex-direction: column;
     align-items: flex-start !important;
     justify-content: left;
+    width: 100%;
 }
 div.modal-content form label {
     display: flex;
     flex-direction: column;
-    max-width: 345px;
     width: 100%;
     font: 300 16px arial;
     margin-bottom: 13px;
@@ -288,14 +288,17 @@ div.modal-content form label {
 div.modal-content form input {
     height: 36px;  
     background-color: rgba(0, 0, 0, 0.06);
-    border-radius: 5px;
+    border: 1px solid #333;
+    border-radius: 5px; 
     margin-top: 2px;
     padding: 5px;
 }
 div.modal-content div#local {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 21px; 
+    width: 100%;
 }
 div.modal-content div#cpfAndData {
     display: flex;
@@ -305,20 +308,21 @@ div.modal-content #labelData {
     width: 145px;
 }
 div.modal-content #labelCidade {
-    max-width: 180px;
+    min-width: 0;
 }
 div.modal-content input #cidade {
     text-transform: uppercase;
 }
 #labelUf {
-    max-width: 143px;
+    width: 50px;
+    min-width: 50px;
     text-transform: uppercase;
 }
 #campo-senha {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 2px solid black;
+    border: 1px solid #333;
     border-radius: 5px;
 }
 input:focus-visible {
@@ -346,6 +350,8 @@ input:focus-visible {
     margin: 30px auto;
     background-color: var(--amarelo);
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
 }
 
 div.hideModal {

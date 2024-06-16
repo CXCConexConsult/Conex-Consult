@@ -111,13 +111,13 @@
 @media (max-width: 470px) {
     div.modal-content {
         width: 99vw;
-        padding: 0;
     }
     div.modal-content form {
         max-width: 350px;
         min-width: 230px;
         width: 100%;
-        padding: 10px;
+    }
+    div.modal-content span img#btnClose {
     }
     div.modal-content div {
         max-width: 350px;
@@ -132,13 +132,6 @@
     div.modal-content #labelUf {
         max-width: 50px;
         width: 100%;
-    }
-    #labelCpf {
-        width: 100%;
-    }
-    div.modal-content div#cpfAndData {
-        flex-direction: column !important;
-        gap: 0 !important;
     }
 }
 @media (max-width: 406px) {
