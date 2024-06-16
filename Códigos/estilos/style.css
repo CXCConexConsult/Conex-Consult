@@ -115,13 +115,22 @@ main section form {
 main section label {
     width: 100%;
 }
-main input.campo {
+main input.email {
     width: 100%;
     height: 47px;
     font: normal 20px arial;
     padding: 10px;
     margin: 0 0 26px 0 ;
 }
+main input.senha {
+    width: 100%;
+    height: 47px;
+    font: normal 20px arial;
+    padding: 10px;
+    margin: 0 0 26px 0 ;   
+}
+
+
 main form #senha {
     margin: 0px;
 }
@@ -295,16 +304,20 @@ div.modal-content #labelData {
 }
 div.modal-content #labelCidade {
     max-width: 180px;
-}
-#dataNascimento {
-    max-width: 143px;
+    text-transform: uppercase;
 }
 #labelUf {
     max-width: 143px;
+    text-transform: uppercase;
 }
-#labelCpf {
-    max-width: 180px;
+.toggle-password {
+   
+    right: 10px;
+    cursor: pointer;
+    user-select: none;
+    color: #777;
 }
+
 #btnCadastrar {
     font: 700 20px arial;
     width: 100%;
@@ -314,6 +327,7 @@ div.modal-content #labelCidade {
     background-color: var(--amarelo);
     cursor: pointer;
 }
+
 div.hideModal {
     display: none;
     transition: 2s;

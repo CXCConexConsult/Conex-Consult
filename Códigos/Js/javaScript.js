@@ -31,6 +31,7 @@ let imgFundo = document.querySelector("#img_fundo")
  })
  window.onload = marginFundo()
 
+
  //Pop Up
 let btnCadastro = document.querySelectorAll(".cadastrar")
 let btnClose = document.querySelector("#btnClose")
@@ -53,7 +54,49 @@ function modalResize(){
     let form = document.querySelector("#myModal")
     form.style.height = html.offsetHeight+"px"
 }
+function somenteletras(event) {
+    const input = event.target;
+    const valor = input.value;
+    // Remove caracteres que não são letras ou espaços
+    input.value = valor.replace(/[0-9]/g, '');
 
+}
+document.getElementById('uf').addEventListener('keypress', function(event) {
+    const charCode = event.which || event.keyCode;
+    if (charCode >= 47 && charCode <= 58) {
+        // Se for um número, impedir a ação
+        event.preventDefault();
+    }
+});
+document.getElementById('nome').addEventListener('keypress', function(event) {
+    const charCode = event.which || event.keyCode;
+    if (charCode >= 47 && charCode <= 58) {
+        // Se for um número, impedir a ação
+        event.preventDefault();
+    }
+});
+document.getElementById('cidade').addEventListener('keypress', function(event) {
+    const charCode = event.which || event.keyCode;
+    if (charCode >= 47 && charCode <= 58) {
+        // Se for um número, impedir a ação
+        event.preventDefault();
+    }
+});
 
+function converterParaMaiusculas(event) {
+    const input = event.target;
+    input.value = input.value.toUpperCase();
+}
 
+function togglePassword() {
+    const passwordInput = document.getElementById('senhaCadastro');
+    const toggleIcon = document.querySelector('.toggle-password');
 
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        toggleIcon.textContent = '👁️‍🗨️'; // Ícone para "esconder"
+    } else {
+        passwordInput.type = 'password';
+        toggleIcon.textContent = '👁️' // Ícone para "mostrar"
+    }
+}
