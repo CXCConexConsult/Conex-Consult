@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conex Consult</title>
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Códigos/estilos/style.css  ">
+    <link rel="stylesheet" href="Códigos/estilos/styleMobile.css"> 
+</head>
+<body>
+    <header id="header">
+        <div id="logo">
+            <img src="imagens/logo.png" id="logo_CXC" alt="logo_CXC">
+           <a href="index.html">
+             <img src="imagens/logo_nome.png" id="logo_nome_CXC" alt="logo_nome_CXC"> 
+           </a>   
+        </div>
+        <nav>
+            <a id="contato" href="">Contato</a>
+            <a id="vagas" href="">Vagas</a>
+            <a id="navCadastrar" class="cadastrar"  target="_self">Cadastrar</a>
+        </nav>
+    </header>
+    <main>
+        <div class="containerCadastro">
+            <section id="cadastro">
+                <h1>Busque oportunidades de emprego de forma mais eficiente!</h1>
+                <form>
+                    <label for="email">
+                        E-mail
+                        <input type="email" name="email" id="email" class="email input" >
+                    </label>
+                    <label for="senha">
+                        Senha
+                        <div class="password-container">
+                        <input type="password" name="senha" id="senha" class="senha input" >
+                        
+                        </div>
+                    </label>
+                    <div id="areaEsqueciSenha">
+                        <p id="esqueciSenha"><a href="">Esqueci minha senha</a></p>
+                        
+                    </div>
+                    <input type="submit" id="btn_entrar"
+                    class="input"  value="Entrar">
+                    <p id="Pcadastro" >Ainda não possui conta na plataforma? <a class="cadastrar">Faça seu cadastro</a></p>
+                </form>
+            </section>
+            <div id="fundo">
+                <img src="imagens/fundo.png" id="img_fundo" alt="mulher buscando uma vaga no tablet">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="links">
+            <a href="https://www.instagram.com/conexconsult/" id="img_insta" target="_blank"><img src="imagens/ico_instagram.png" alt="icone instagram"><p>@conexconsult</p></a>
+            <a href="https://twitter.com/ConexConsult"  id="img_twitter" target="_blank"><img src="imagens/ico_twitter.png" alt="icone twitter"><p>@ConexConsult</p></a>
+        </div>
+        <img src="imagens/mulher.png" id="img_mulher" alt="mulher buscando uma vaga no tablet">
+    </footer>
+
+    <!-- Pop Up -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+        <span><img src="imagens/closeButton.png" alt="botão fechar" id="btnClose"></span>
+        <h1>É novo por aqui? Cadastre-se abaixo</h1>
+            <form>
+                <label for="nome">
+                    Nome completo
+                    <input type="text" name="nome" id="nome" oninput="converterParaMaiusculas(event)" oninput="somenteletras(event)">
+                </label>
+                <div id="local" class="campo">
+                    <label id="labelCidade" for="cidade">
+                        Cidade
+                        <input type="text" name="cidade" id="cidade" oninput="converterParaMaiusculas(event)" oninput="somenteletras(event)" >
+                    </label>
+                    <label id="labelUf" for="uf">
+                        UF
+                        <input type="text" name="uf" id="uf" maxlength="2" oninput="converterParaMaiusculas(event)" oninput="somenteletras(event)">
+                        
+                    </label>
+                </div>  
+                <label for="email">
+                    E-mail
+                    <input type="email" name="email" id="emailCadastro">
+                </label>
+                
+                <label for="senha" id="label-senha">
+                    Senha
+                    <div id="campo-senha">
+                        <input id="senhaCadastro" type="password" name="senha" id="senhaCadastro">
+                        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                    </div>
+                </label>
+                <input id="btnCadastrar" type="submit" value="Cadastrar-se">
+            </form>
+        
+        </div>
+    </div>
+
+</body>
+<script src="Códigos/Js/javaScript.js"></script>
+
+</html>

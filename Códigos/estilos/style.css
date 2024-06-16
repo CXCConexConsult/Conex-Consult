@@ -16,7 +16,7 @@ body {
 }
 
 html {
-    height: 100vh;
+    height: min-content;
 }
 
 header {
@@ -67,6 +67,9 @@ header nav a:hover {
     transition: 500ms;
     color: #b19000;
 }
+a.cadastrar {
+    cursor: pointer;
+}
 main {
     margin-top: 180px;
     min-height: calc(100vh - 323px);
@@ -112,13 +115,22 @@ main section form {
 main section label {
     width: 100%;
 }
-main input.campo {
+main input.email {
     width: 100%;
     height: 47px;
     font: normal 20px arial;
     padding: 10px;
     margin: 0 0 26px 0 ;
 }
+main input.senha {
+    width: 100%;
+    height: 47px;
+    font: normal 20px arial;
+    padding: 10px;
+    margin: 0 0 26px 0 ;   
+}
+
+
 main form #senha {
     margin: 0px;
 }
@@ -222,5 +234,120 @@ footer #img_mulher {
 /* Comfigurações Pop-Up */
 
 div.modal {
+    background-color: rgba(0, 0, 0, 0.351);
+    width: calc(100%);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+div.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px 20px 0 20px;
+    box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.28);
+    border-radius: 10px;
+}
+div.modal-content span {
+    width: 100%;
+    height: 20px;
+    text-align: right;
+    padding-right: 5px;
+}
+div.modal-content span #btnClose {
+    width: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+div.modal-content h1 {
+    max-width: 300px;
+    text-align: center;
+}
+div.modal-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: left;
+}
+div.modal-content form label {
+    display: flex;
+    flex-direction: column;
+    max-width: 345px;
+    width: 100%;
+    font: 300 16px arial;
+    margin-bottom: 13px;
+}
+
+div.modal-content form input {
+    height: 36px;  
+    background-color: rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    margin-top: 2px;
+    padding: 5px;
+}
+div.modal-content div#local {
+    display: flex;
+    flex-direction: row;
+    gap: 21px; 
+}
+div.modal-content div#cpfAndData {
+    display: flex;
+    gap: 21px;
+}
+div.modal-content #labelData {
+    width: 145px;
+}
+div.modal-content #labelCidade {
+    max-width: 180px;
+}
+div.modal-content input #cidade {
+    text-transform: uppercase;
+}
+#labelUf {
+    max-width: 143px;
+    text-transform: uppercase;
+}
+#campo-senha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+input:focus-visible {
+    outline: none;
+}
+#senhaCadastro {
+    width: 306px;
+    border: none;
+    padding: 0 5px;
+    margin: 0;
+}
+.toggle-password {
+    right: 10px;
+    cursor: pointer;
+    user-select: none;
+    color: #777;
+}
+
+#btnCadastrar {
+    font: 700 20px arial;
+    width: 100%;
+    max-width: 347px;
+    height: 56px;
+    margin: 30px auto;
+    background-color: var(--amarelo);
+    cursor: pointer;
+}
+
+div.hideModal {
     display: none;
+    transition: 2s;
 }
