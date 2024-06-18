@@ -89,14 +89,25 @@ function converterParaMaiusculas(event) {
 }
 
 function togglePassword() {
-    const passwordInput = document.getElementById('senhaCadastro');
+    const passwordInput = document.getElementById('senha');
     const toggleIcon = document.querySelector('.toggle-password');
-
+    const passwordInputPop = document.getElementById('senhaCadastro');
+    const toggleIconPop = document.querySelector('.toggle-password-pop');
+    console.log(passwordInput)
     if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
         toggleIcon.textContent = '👁️‍🗨️'; // Ícone para "esconder"
     } else {
+        
         passwordInput.type = 'password';
         toggleIcon.textContent = '👁️' // Ícone para "mostrar"
+    }
+    console.log(passwordInputPop)
+    if (passwordInputPop.type === 'password') {
+        passwordInputPop.type = 'text';
+        toggleIconPop.textContent = '👁️‍🗨️'; // Ícone para "esconder"
+    } else {
+        passwordInputPop.type = 'password';
+        toggleIconPop.textContent = '👁️' // Ícone para "mostrar"
     }
 }

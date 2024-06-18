@@ -115,6 +115,16 @@ main section form {
 main section label {
     width: 100%;
 }
+main form div#password-container {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    align-items: center;
+    background-color: white;
+}
+main form div#password-container input {
+    border: 0;
+}
 main input.email {
     width: 100%;
     height: 47px;
@@ -248,7 +258,7 @@ div.modal-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: #f0f0f0;
     width: 400px;
     max-width: 400px;
     margin: auto;
@@ -256,6 +266,7 @@ div.modal-content {
     box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.28);
     border-radius: 10px;
 }
+
 div.modal-content span.span-close {
     width: 100%;
     height: 20px;
@@ -287,7 +298,7 @@ div.modal-content form label {
 
 div.modal-content form input {
     height: 36px;  
-    background-color: rgba(0, 0, 0, 0.06);
+    background-color: white;
     border: 1px solid #333;
     border-radius: 5px; 
     margin-top: 2px;
@@ -319,11 +330,16 @@ div.modal-content input #cidade {
     text-transform: uppercase;
 }
 #campo-senha {
+    background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     border: 1px solid #333;
     border-radius: 5px;
+}
+#campo-senha input {
+    background-color: white;
+
 }
 input:focus-visible {
     outline: none;
