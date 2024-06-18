@@ -139,8 +139,13 @@ main input.senha {
     padding: 10px;
     margin: 0 0 26px 0 ;   
 }
-
-
+.toggle-password {
+    right: 10px;
+    cursor: pointer;
+    user-select: none;
+    color: #777;
+    margin-right: 5px;
+}
 main form #senha {
     margin: 0px;
 }
@@ -339,7 +344,6 @@ div.modal-content input #cidade {
 }
 #campo-senha input {
     background-color: white;
-
 }
 input:focus-visible {
     outline: none;
@@ -350,12 +354,9 @@ input:focus-visible {
     padding: 0 5px;
     margin: 0;
 }
-.toggle-password {
-    right: 10px;
+.toggle-password-pop {
+    margin-right: 4px;
     cursor: pointer;
-    user-select: none;
-    color: #777;
-    margin-right: 5px;
 }
 
 #btnCadastrar {

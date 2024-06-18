@@ -90,19 +90,23 @@ function converterParaMaiusculas(event) {
 
 function togglePassword() {
     const passwordInput = document.getElementById('senha');
-    const toggleIcon = document.querySelector('.toggle-password');
-    const passwordInputPop = document.getElementById('senhaCadastro');
-    const toggleIconPop = document.querySelector('.toggle-password-pop');
-    console.log(passwordInput)
+    const toggleImg = document.querySelector('#img_visaoSenha');
+
+    console.log(toggleImg.src)
+    
     if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
-        toggleIcon.textContent = '👁️‍🗨️'; // Ícone para "esconder"
+        toggleImg.src = "imagens/visibility_off.png"
     } else {
-        
         passwordInput.type = 'password';
-        toggleIcon.textContent = '👁️' // Ícone para "mostrar"
+        toggleImg.src = "imagens/visibility_on.png"
     }
-    console.log(passwordInputPop)
+}  
+
+function togglePasswordPopUp() {
+    const passwordInputPop = document.getElementById('senhaCadastro');
+    const toggleIconPop = document.querySelector('.toggle-password-pop');
+
     if (passwordInputPop.type === 'password') {
         passwordInputPop.type = 'text';
         toggleIconPop.textContent = '👁️‍🗨️'; // Ícone para "esconder"
