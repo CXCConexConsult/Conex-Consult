@@ -88,12 +88,11 @@ function converterParaMaiusculas(event) {
     input.value = input.value.toUpperCase();
 }
 
+//Altera o botão de visualizar senha e muda o tipo do input de senha
+//da área de login
 function togglePassword() {
     const passwordInput = document.getElementById('senha');
     const toggleImg = document.querySelector('#img_visaoSenha');
-
-    console.log(toggleImg.src)
-    
     if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
         toggleImg.src = "imagens/visibility_off.png"
@@ -103,6 +102,8 @@ function togglePassword() {
     }
 }  
 
+//Altera o botão de visualizar senha e muda o tipo do input de senha
+//do pop-up cadastro
 function togglePasswordPopUp() {
     const passwordInputPop = document.getElementById('senhaCadastro');
     const toggleImgPop = document.querySelector('#img_visaoSenhaPop');
@@ -112,5 +113,46 @@ function togglePasswordPopUp() {
     } else {
         passwordInputPop.type = 'password';
         toggleImgPop.src = "imagens/visibility_on.png"
+    }
+}
+//Altera o botão de visualizar senha e muda o tipo do input de confirmação de senha
+//do pop-up cadastro
+function toggleConfirmarPasswordPopUp () {
+    const passwordInputPop = document.getElementById('confirmarSenha');
+    const toggleImgPop = document.querySelector('#img_visaoConfirmarSenhaPop');
+    if (passwordInputPop.type === 'password') {
+        passwordInputPop.type = 'text';
+        toggleImgPop.src = "imagens/visibility_off.png"
+    } else {
+        passwordInputPop.type = 'password';
+        toggleImgPop.src = "imagens/visibility_on.png"
+    }
+}
+
+let inputConfirmarSenha = document.querySelector("#confirmarSenha")
+let inputSenha = document.querySelector("#senhaCadastro")
+inputSenha = document.addEventListener("input",correspondeciaSenhas)
+inputConfirmarSenha.addEventListener("input",correspondeciaSenhas)
+
+
+function correspondeciaSenhas(){
+    let senha = document.querySelector("#senhaCadastro")
+    let confirmarSenha = document.querySelector("#confirmarSenha")
+    let confirmacao = document.querySelector("#confirmacao")
+    if (senha.value == confirmarSenha.value) {
+        confirmacao.textContent = "Senhas coreespondem"
+        confirmacao.style.color = "rgb(0, 100, 0)"
+    } else if (senha.value != confirmarSenha.value){
+        confirmacao.textContent = "As senhas não correspondem"
+        confirmacao.style.color = "rgb(100, 0, 0)"
+    }
+    if (senha.value == "" || confirmarSenha.value == ""){
+        confirmacao.textContent = ""
+    }
+    if (senha.value != "") {
+        confirmarSenha.disabled = ""
+    } else {
+        confirmarSenha.disabled = "disabled"
+        confirmarSenha.value = ""
     }
 }

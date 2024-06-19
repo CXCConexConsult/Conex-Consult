@@ -94,11 +94,12 @@
                     </div>
                 </label>
                 <label for="confirmarSenha">
-                    Comfirmação de senha:
+                    Confirmação de senha:
                     <div id="passwordPop-container">
-                        <input type="password" name="confirmarSenha" id="confirmarSenha">
-                        <span class="toggle-password-pop" onclick="togglePasswordPopUp()"><img src="imagens/visibility_on.png" alt="exibir senha" id="img_visaoSenhaPop"></span>
+                        <input type="password" name="confirmarSenha" id="confirmarSenha" disabled="disabled">
+                        <span class="toggle-password-pop" onclick="toggleConfirmarPasswordPopUp()"><img src="imagens/visibility_on.png" alt="exibir senha" id="img_visaoConfirmarSenhaPop"></span>
                     </div>
+                    <p id="confirmacao"></p>
                 </label>
                 <input id="btnCadastrar" type="submit" value="Cadastrar-se">
             </form>
