@@ -144,7 +144,9 @@ main input.senha {
     cursor: pointer;
     user-select: none;
     color: #777;
-    margin-right: 5px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
 }
 main form #senha {
     margin: 0px;
@@ -334,7 +336,7 @@ div.modal-content input #cidade {
     min-width: 50px;
     text-transform: uppercase;
 }
-#campo-senha {
+#campo-senha, #passwordPop-container{
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -342,13 +344,11 @@ div.modal-content input #cidade {
     border: 1px solid #333;
     border-radius: 5px;
 }
-#campo-senha input {
-    background-color: white;
-}
 input:focus-visible {
     outline: none;
 }
-#senhaCadastro {
+ #senhaCadastro, #confirmarSenha { /* campo senha e campo comfirmação de senha do pop-up */
+    background-color: white;
     width: 100%;
     border: none;
     padding: 0 5px;
@@ -357,6 +357,15 @@ input:focus-visible {
 .toggle-password-pop {
     margin-right: 4px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+div#passwordPop-container {
+    display: flex;
+    flex-direction: row;
+}
+div#passwordPop-container input{
+    width: 100%;
 }
 
 #btnCadastrar {

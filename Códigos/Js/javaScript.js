@@ -105,13 +105,12 @@ function togglePassword() {
 
 function togglePasswordPopUp() {
     const passwordInputPop = document.getElementById('senhaCadastro');
-    const toggleIconPop = document.querySelector('.toggle-password-pop');
-
+    const toggleImgPop = document.querySelector('#img_visaoSenhaPop');
     if (passwordInputPop.type === 'password') {
         passwordInputPop.type = 'text';
-        toggleIconPop.textContent = '👁️‍🗨️'; // Ícone para "esconder"
+        toggleImgPop.src = "imagens/visibility_off.png"
     } else {
         passwordInputPop.type = 'password';
-        toggleIconPop.textContent = '👁️' // Ícone para "mostrar"
+        toggleImgPop.src = "imagens/visibility_on.png"
     }
 }

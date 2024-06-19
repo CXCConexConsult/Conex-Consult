@@ -61,7 +61,7 @@
     </footer>
 
     <!-- Pop Up -->
-    <div id="myModal" class="modal hideModal">
+    <div id="myModal" class="modal">
         <div class="modal-content">
         <span class="span-close"><img src="imagens/closeButton.png" alt="botão fechar" id="btnClose"></span>
         <h1>É novo por aqui? Cadastre-se abaixo</h1>
@@ -90,7 +90,14 @@
                     Senha
                     <div id="campo-senha">
                         <input id="senhaCadastro" type="password" name="senha" id="senhaCadastro">
-                        <span class="toggle-password-pop" onclick="togglePasswordPopUp()"></span>
+                        <span class="toggle-password-pop" onclick="togglePasswordPopUp()"><img src="imagens/visibility_on.png" alt="exibir senha" id="img_visaoSenhaPop"></span>
+                    </div>
+                </label>
+                <label for="confirmarSenha">
+                    Comfirmação de senha:
+                    <div id="passwordPop-container">
+                        <input type="password" name="confirmarSenha" id="confirmarSenha">
+                        <span class="toggle-password-pop" onclick="togglePasswordPopUp()"><img src="imagens/visibility_on.png" alt="exibir senha" id="img_visaoSenhaPop"></span>
                     </div>
                 </label>
                 <input id="btnCadastrar" type="submit" value="Cadastrar-se">
