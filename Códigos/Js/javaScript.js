@@ -16,20 +16,20 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop;
 }); 
 
-//Ajuste do margin do fundo conforme o tamanho da tela
+// Ajuste do margin do fundo conforme o tamanho da tela
 let imgFundo = document.querySelector("#img_fundo")
- let tela = document.querySelector("html")
- function marginFundo() {
-     if (tela.offsetWidth < 1156) {
-         imgFundo.style.marginTop = "70px"
-     }else {
-         imgFundo.style.marginTop = '0'
-     }
- }
- window.addEventListener('resize',(e)=>{
-     marginFundo()
- })
- window.onload = marginFundo()
+let tela = document.querySelector("html")
+function marginFundo() {
+    if (tela.offsetWidth < 1156) {
+        imgFundo.style.marginTop = "70px"
+    }else {
+        imgFundo.style.marginTop = '0'
+    }
+}
+window.addEventListener('resize',(e)=>{
+    marginFundo()
+})
+window.onload = marginFundo()
 
 
  //Pop Up
@@ -140,19 +140,10 @@ function correspondeciaSenhas(){
     let confirmarSenha = document.querySelector("#confirmarSenha")
     let confirmacao = document.querySelector("#confirmacao")
     if (senha.value == confirmarSenha.value) {
-        confirmacao.textContent = "Senhas coreespondem"
+        confirmacao.textContent = "Senhas correspondem"
         confirmacao.style.color = "rgb(0, 100, 0)"
     } else if (senha.value != confirmarSenha.value){
         confirmacao.textContent = "As senhas não correspondem"
         confirmacao.style.color = "rgb(100, 0, 0)"
-    }
-    if (senha.value == "" || confirmarSenha.value == ""){
-        confirmacao.textContent = ""
-    }
-    if (senha.value != "") {
-        confirmarSenha.disabled = ""
-    } else {
-        confirmarSenha.disabled = "disabled"
-        confirmarSenha.value = ""
     }
 }
