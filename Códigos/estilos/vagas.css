@@ -1,0 +1,42 @@
+header {
+    height: 62px;
+}
+header a#logo_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header div#logo {
+    width: 191px;
+    padding: 0 10px;
+    align-items: center;
+}
+header #logo_CXC {
+    width: 41px;
+}
+header #logo_nome_CXC {
+    width: 191px;
+    margin-top: 13px;
+}
+header nav {
+    width: 500px;
+}
+header nav a {
+    font-size: 20px;
+}
+
+main section#busca div#campo_filtros select {
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+footer {
+    height: 94px;
+}
+footer div#links a {
+    align-items: center;
+}
+footer p {
+    font-size: 16px;
+    text-align: center;
+}
