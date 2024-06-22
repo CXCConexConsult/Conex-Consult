@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/index.css">
     <link rel="stylesheet" href="../estilos/vagas.css">
-    <link rel="stylesheet" href="../estilos/indexMobile.css">
 </head> 
 <body>
     <header id="header">
@@ -28,25 +27,157 @@
         <section id="busca">
             <div id="campo_busca">
                 <div id="campo_buscar_vaga">
-                    <input type="text" name="buscar_vaga" id="buscar_vaga">
+                    <input type="text" name="buscar_vaga" id="buscar_vaga" placeholder="Buscar vaga...">
                     <img src="../../imagens/search.png" alt="botão pesquisar">
                 </div>
                 <div id="campo_buscar_local">
-                    <input type="text" name="buscar_local" id="buscar_local">
+                    <input type="text" name="buscar_local" id="buscar_local" placeholder="Cidade, Estado, País">
                     <img src="../../imagens/search.png" alt="botão pesquisar">
                 </div>
             </div>
-            <div id="campo_filtros">
-                <select name="nivel_exp" id="nivel_exp" >
-                    <option value="default">Nível de experiencia</option>
-                    <option value="estágio">Estágio</option>
-                    <option value="assistente">Assistente</option>
-                    <option value="junior">Júnior</option>
-                    <option value="pleno">Pleno</option>
-                    <option value="senior">Senior</option>
-                </select>
+            <div id="campo_filtros_container">
+                <div id="campo_filtros">
+                    <select name="nivel_exp" id="nivel_exp" >
+                        <option value="default">Nível de experiencia</option>
+                        <option value="estágio">Estágio</option>
+                        <option value="assistente">Assistente</option>
+                        <option value="junior">Júnior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                    <select name="data_publicação" id="data_publicação">
+                        <option value="default">Data de publicação</option>
+                        <option value="1h">Há 1 hora</option>
+                        <option value="4h">Há 4 horas</option>
+                        <option value="8h">Há 8 horas</option>
+                        <option value="24h">Há 24 horas</option>
+                        <option value="1 semana">Há 1 semana</option>
+                        <option value="1 mês">Há 1 mês</option>
+                    </select>
+                    <select name="Correspondencia" id="Correspondencia">
+                        <option value="default">Correspondência</option>
+                        <option value="maior70%">Maior que 70%</option>
+                        <option value="maior50%">Maior que 50%</option>
+                        <option value="maior30%">Maior que 30%</option>
+                        <option value="menor30%">Menor que 30%</option>
+                    </select>
+                    <select name="empresa" id="empresa">
+                        <option value="default">Empresa</option>
+                        <option value="Microsoft">Microsoft</option>
+                        <option value="Amazon">Amazon</option>
+                        <option value="Petrobras">Petrobras</option>
+                        <option value="Nubank">Nubank</option>
+                    </select>
+                </div>
+                <p>Limpar filtros</p>
             </div>
         </section>
+        <div id="container_vagas">
+            <section id="vagas_container">
+                <section id="vagas">
+                    <div id="ordem_container">
+                        <select name="ordem" id="ordem">
+                            <option value="ordem decrescente">Ordem Decrescente</option>
+                            <option value="ordem decrescente">Ordem Crescente</option>
+                        </select>
+                    </div>
+                    <div class="vaga">
+                        <div class="headerVaga">
+                            <div class="empresa">
+                                <img src="../../imagens/Microsoft_logo.png" alt="Logo microsoft">
+                                <span>Microsoft</span>
+                            </div>
+                            <div class="match">
+                                <span>Correspondência:</span>
+                                <span class="porcemtagem">89%</span>
+                            </div>
+                        </div>
+                        <div class="bodyVaga">
+                            <div class="detalhes">
+                                <p>Detalhes resumidos da vaga</p>
+                            </div>
+                        </div>
+                        <div class="footerVaga">
+                            <span class="dataVaga">Há 4 horas</span>
+                            <span class="localVaga">Local</span>
+                            <span class="salarioVaga">Salário</span>
+                        </div>
+                    </div>
+                    <div class="vaga">
+                        <div class="headerVaga">
+                            <div class="empresa">
+                                <img src="../../imagens/Microsoft_logo.png" alt="Logo microsoft">
+                                <span>Microsoft</span>
+                            </div>
+                            <div class="match">
+                                <span>Correspondência:</span>
+                                <span class="porcemtagem">89%</span>
+                            </div>
+                        </div>
+                        <div class="bodyVaga">
+                            <div class="detalhes">
+                                <p>Detalhes resumidos da vaga</p>
+                            </div>
+                        </div>
+                        <div class="footerVaga">
+                            <span class="dataVaga">Há 4 horas</span>
+                            <span class="localVaga">Local</span>
+                            <span class="salarioVaga">Salário</span>
+                        </div>
+                    </div>
+                    <div class="vaga">
+                        <div class="headerVaga">
+                            <div class="empresa">
+                                <img src="../../imagens/Microsoft_logo.png" alt="Logo microsoft">
+                                <span>Microsoft</span>
+                            </div>
+                            <div class="match">
+                                <span>Correspondência:</span>
+                                <span class="porcemtagem">89%</span>
+                            </div>
+                        </div>
+                        <div class="bodyVaga">
+                            <div class="detalhes">
+                                <p>Detalhes resumidos da vaga</p>
+                            </div>
+                        </div>
+                        <div class="footerVaga">
+                            <span class="dataVaga">Há 4 horas</span>
+                            <span class="localVaga">Local</span>
+                            <span class="salarioVaga">Salário</span>
+                        </div>
+                    </div>
+                    <div class="vaga">
+                        <div class="headerVaga">
+                            <div class="empresa">
+                                <img src="../../imagens/Microsoft_logo.png" alt="Logo microsoft">
+                                <span>Microsoft</span>
+                            </div>
+                            <div class="match">
+                                <span>Correspondência:</span>
+                                <span class="porcemtagem">89%</span>
+                            </div>
+                        </div>
+                        <div class="bodyVaga">
+                            <div class="detalhes">
+                                <p>Detalhes resumidos da vaga</p>
+                            </div>
+                        </div>
+                        <div class="footerVaga">
+                            <span class="dataVaga">Há 4 horas</span>
+                            <span class="localVaga">Local</span>
+                            <span class="salarioVaga">Salário</span>
+                        </div>
+                    </div>
+            
+                </section>
+                <button id="btn_verMais">Ver mais...</button>
+            </section>
+            <hr>
+            <section id="vaga_detalhada">
+                <img src="../../imagens/Microsoft_logo.png" alt="">
+            </section>
+        </div>
     </main>
     <footer>
         <div id="links">

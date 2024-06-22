@@ -70,7 +70,7 @@ header nav a:hover {
 a.cadastrar {
     cursor: pointer;
 }
-main {
+main#login{
     margin-top: 180px;
     min-height: calc(100vh - 323px);
 }
@@ -80,7 +80,7 @@ main div.containerCadastro {
     align-items: center;
     height: auto;
 }
-main section {
+main#login section {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,3 +1,20 @@
+:root {
+    --primaria: #EAEAEA;
+    --amarelo: #EFC406;
+    --azulEscuro: #100F1E;
+    --azul: #2d2c55;
+}
+
+body {
+    background-color: #E8E8E8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+select {
+    padding: 2px 5px;
+    border-radius: 3px;
+}
 header {
     height: 62px;
 }
@@ -19,22 +36,170 @@ header #logo_nome_CXC {
     margin-top: 13px;
 }
 header nav {
-    width: 500px;
+    width: 450px;
 }
 header nav a {
     font-size: 20px;
 }
-
-main section#busca div#campo_filtros select {
-    padding: 2px 5px;
-    border-radius: 3px;
+main {
+    margin-top: 62px;
+    max-width: 868px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 13px #0000003b;
+}
+main section#busca {
+    background-color: var(--primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+main section#busca div#campo_busca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 650px;
+    margin: 20px 0;
+}
+main div#campo_busca div{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    height: 34px;
+}
+main div#campo_busca div#campo_buscar_vaga {
+    max-width: 380px;
+    width: 100%;
+}
+main div#campo_busca div#campo_buscar_local {
+    min-width: 200px;
+    max-width: 257px;
+}
+main div#campo_busca div input {
+    border: none;
+    width: 100%;
+}
+main div#campo_busca div img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+main #campo_filtros_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 700px;
+}
+main #campo_filtros_container p {
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--azul);
+}
+main #campo_filtros_container p:hover {
+    text-decoration: underline;
+}
+main section#busca div#campo_filtros {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
 }
 
+main section#vagas_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 400px;
+}
+main section#vagas {
+    width: 380px;
+}
+main div#container_vagas {
+    display: flex;
+}
+main section#vagas div#ordem_container {
+    display: flex;
+    justify-content: flex-end;
+}
+main section#vagas select#ordem {
+    width: 150px;
+    border: none;
+    margin: 5px 0;
+}
+main section#vagas div.vaga {
+    background-color: var(--primaria);
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 2px 2px 6px 0px #4444445e;
+    margin-bottom: 15px;
+}
+main div.vaga .headerVaga {
+    display: flex;
+    justify-content: space-between;
+}
+div.vaga .headerVaga .empresa {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+div.vaga .headerVaga .match .porcemtagem {
+    background-color: rgb(94, 255, 94);
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+div.vaga .bodyVaga {
+    display: flex;
+    justify-content: flex-end;
+}
+div.vaga .bodyVaga .detalhes{
+    background-color: white;
+    height: 65px;
+    width: 333px;
+    padding: 5px;
+}
+div.vaga .footerVaga {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+section#vagas_container button#btn_verMais {
+    width: 121px;
+    height: 30px;
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 5px;
+}
+main section#vaga_detalhada {
+    background-color: var(--primaria);
+    width: 100%;
+    height: 500px;
+    margin: 10px 10px 0 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 0px #4444445e;
+}
+main section#vaga_detalhada img {
+    width: 56px;
+}
 footer {
     height: 94px;
+    margin: 0;
 }
 footer div#links a {
-    align-items: center;
+    align-items: center;           
 }
 footer p {
     font-size: 16px;
