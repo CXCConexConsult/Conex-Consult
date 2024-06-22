@@ -177,9 +177,10 @@ div.vaga .footerVaga {
 section#vagas_container button#btn_verMais {
     width: 121px;
     height: 30px;
-    background-color: var(--amarelo);
-    border: none;
+    background-color: var(--primaria);
+    border: 1px solid black;
     border-radius: 5px;
+    cursor: pointer;
 }
 main section#vaga_detalhada {
     background-color: var(--primaria);
