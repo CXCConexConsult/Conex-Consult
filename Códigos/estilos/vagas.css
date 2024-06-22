@@ -190,6 +190,7 @@ main section#vaga_detalhada {
     border: 1px solid gray;
     border-radius: 5px;
     box-shadow: 2px 2px 6px 0px #4444445e;
+    overflow: auto;
 }
 main section#vaga_detalhada img {
     width: 56px;
