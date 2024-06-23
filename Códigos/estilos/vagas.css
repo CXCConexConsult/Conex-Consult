@@ -202,44 +202,44 @@ main section.vaga_detalhada img {
     width: 56px;
     display: inline;
 }
-main section.vaga_detalhada div#vaga1 {
+main section.vaga_detalhada div.vagaDetalhada {
     width: 500px;
     height: min-content;
 }
-div#vaga1 div.empresa {
+div.vagaDetalhada div.empresa {
     display: flex;
     flex-direction: row;
     margin: 10px 0 20px 0;
 }
-div#vaga1 div.empresa span {
+div.vagaDetalhada div.empresa span {
     margin-left: 5px;
     font-size: 30px;
 }
-div#vaga1 a {
+div.vagaDetalhada a {
     text-decoration: none;
     color: #a88900;
 }
-div#vaga1 h1 {
+div.vagaDetalhada h1 {
     font-size: 30px;
     text-align: start;
 }
-div#vaga1 h2 {
+div.vagaDetalhada h2 {
     font-size: 20px;
     margin: 20px 0 5px 0;
 }
-div#vaga1 h3 {
+div.vagaDetalhada h3 {
     margin: 20px 0 5px 0;
 }
-div#vaga1 ul {
+div.vagaDetalhada ul {
     margin-left: 20px;
 }
-div#vaga1 p:last-child {
+div.vagaDetalhada p:last-child {
     margin-bottom: 20px;
 }
-div#vaga1 div.match {
+div.vagaDetalhada div.match {
     margin: 10px 0;
 }
-div#vaga1 .requisitos {
+div.vagaDetalhada .requisitos {
     display: inline-block;
     margin: 3px 4px;
     padding: 0px 8px;

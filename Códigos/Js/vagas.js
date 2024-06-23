@@ -1,4 +1,9 @@
+import {vagasDetalhadas} from './vagasDetalhadas.js';
+
 function mudarProcemtagem (n){
+    let porcemtagemVaga = document.querySelector(".porcemtagem")
+    porcemtagemVaga.textContent = n + "%"
+    console.log(porcemtagemVaga)
     let match = document.querySelectorAll(".porcemtagem")
     match.forEach(e=>{
         //transforma a procemtagem em número
@@ -11,48 +16,42 @@ function mudarProcemtagem (n){
             e.style.backgroundColor = "rgb(255,"+porcemtagem*5+",0)"
         }
     })
-    let porcemtagemVaga1 = parseInt(document.querySelector("#porcemtagemVaga1").textContent.match(/\d+/))
-    console.log(porcemtagemVaga1)
 }
 
-let perfil = ["JavaScript","Inglês","Scrum","Git","GitHub","Node.js","HTML5","CSS3","React","Espanhol"]
-let vaga1Requisitos = document.querySelectorAll(".requisitos")
-let perfilMatchVaga1 = []
-let porcemtagem
-perfil.map(e=>{
-    vaga1Requisitos.forEach(c=>{
-        if (e == c.textContent){
-            perfilMatchVaga1.push(e)
-        }
+let perfil = ["JavaScript","Inglês","Scrum","Git","GitHub","Node.js","HTML5","CSS3","React","Espanhol","SQL","Curso superior em TI"]
+function visualizarCompetencias(){
+    let vaga1Requisitos = document.querySelectorAll(".requisitos")
+    let perfilMatchVaga1 = []
+    let porcemtagem
+    perfil.map(e=>{
+        vaga1Requisitos.forEach(c=>{
+            if (e == c.textContent){
+                perfilMatchVaga1.push(e)
+            }
+        })
     })
-})
-vaga1Requisitos.forEach(e=>{
-    perfilMatchVaga1.map(c=>{
-        if(c == e.textContent){
-            e.style.backgroundColor = "rgb(0,255,0)"
-        }
+    vaga1Requisitos.forEach(e=>{
+        perfilMatchVaga1.map(c=>{
+            if(c == e.textContent){
+                e.style.backgroundColor = "rgb(0,255,0)"
+            }
+        })
     })
-})
-console.log(vaga1Requisitos.length)
-console.log(perfilMatchVaga1.length)
-porcemtagem = 100*perfilMatchVaga1.length / vaga1Requisitos.length
-mudarProcemtagem(Math.trunc(porcemtagem))
+    porcemtagem = 100*perfilMatchVaga1.length / vaga1Requisitos.length
+    mudarProcemtagem(Math.trunc(porcemtagem))
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-    const vagaItem = document.querySelectorAll('vaga');
-    const detalhesVaga = document.getElementById('detalhes_vaga');
-
-    const vagadetalhada = {
-        1: 'Detalhes da Vaga 1: Descrição detalhada, requisitos, benefícios, etc.',
-        2: 'Detalhes da Vaga 2: Descrição detalhada, requisitos, benefícios, etc.',
-        3: 'Detalhes da Vaga 3: Descrição detalhada, requisitos, benefícios, etc.'
-        // Adicione mais detalhes conforme necessário
-    };
-
+    const vagaItem = document.querySelectorAll('.vaga');
+    const detalhesVaga = document.querySelector('.vaga_detalhada');
+    visualizarCompetencias()
     vagaItem.forEach(item => {
-        item.addEventListener('click', () => {
-            vagaId = item.getAttribute('data-id');
-            detalhesVaga.textContent = vagadetalhada[vagaId] || 'Detalhes não encontrados.';
+        item.addEventListener('click', (e) => {
+            let vagaId = item.getAttribute('data-id');
+            detalhesVaga.innerHTML = vagasDetalhadas[vagaId]
+            visualizarCompetencias()
         });
     });
 });
+
+
