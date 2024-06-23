@@ -228,5 +228,10 @@ let vagasDetalhadas = {
     '</div>' +
   '</div>'
 }
-
-export {vagasDetalhadas}
+let competenciaVagas = {
+    1: ['JavaScript','Python','C#','Java','Scrum','IOS','Android','AWS','React','Curso superior em TI'],
+    2: ['SQL', 'Python', 'R', 'ETL', 'Hadoop', 'Spark', 'GCP', 'Machine Learning', 'Curso superior em TI'],
+    3: ['AWS', 'Azure', 'GCP', 'Docker', 'Kubernetes', 'Segurança da Informação', 'Agile'],
+    4: ['Firewalls', 'IDS/IPS', 'Criptografia', 'ISO 27001', 'GDPR', 'CISSP', 'CEH', 'SIEM']
+}
+export {vagasDetalhadas,competenciaVagas}
