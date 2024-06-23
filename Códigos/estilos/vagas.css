@@ -185,7 +185,7 @@ section#vagas_container button#btn_verMais {
     border-radius: 5px;
     cursor: pointer;
 }
-div.vaga_detalhada {
+section.vaga_detalhada {
     display: flex;
     justify-content: center;
     background-color: var(--primaria);
@@ -198,11 +198,11 @@ div.vaga_detalhada {
     box-shadow: 2px 2px 6px 0px #4444445e;
     overflow: auto;
 }
-main section#vaga_detalhada img {
+main section.vaga_detalhada img {
     width: 56px;
     display: inline;
 }
-main section#vaga_detalhada div#vaga1 {
+main section.vaga_detalhada div#vaga1 {
     width: 500px;
     height: min-content;
 }
