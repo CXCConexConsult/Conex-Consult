@@ -183,9 +183,11 @@ section#vagas_container button#btn_verMais {
     cursor: pointer;
 }
 main section#vaga_detalhada {
+    display: flex;
+    justify-content: center;
     background-color: var(--primaria);
     width: 100%;
-    height: 500px;
+    height: 650px;
     margin: 10px 10px 0 5px;
     padding: 5px;
     border: 1px solid gray;
@@ -195,8 +197,53 @@ main section#vaga_detalhada {
 }
 main section#vaga_detalhada img {
     width: 56px;
+    display: inline;
 }
-
+main section#vaga_detalhada div#vaga1 {
+    width: 500px;
+    height: min-content;
+}
+div#vaga1 div.empresa {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 20px 0;
+}
+div#vaga1 div.empresa span {
+    margin-left: 5px;
+    font-size: 30px;
+}
+div#vaga1 a {
+    text-decoration: none;
+    color: #a88900;
+}
+div#vaga1 h1 {
+    font-size: 30px;
+    text-align: start;
+}
+div#vaga1 h2 {
+    font-size: 20px;
+    margin: 20px 0 5px 0;
+}
+div#vaga1 h3 {
+    margin: 20px 0 5px 0;
+}
+div#vaga1 ul {
+    margin-left: 20px;
+}
+div#vaga1 p:last-child {
+    margin-bottom: 20px;
+}
+div#vaga1 div.match {
+    margin: 10px 0;
+}
+div#vaga1 .requisitos {
+    display: inline-block;
+    margin: 3px 4px;
+    padding: 0px 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 178, 178);
+}
 footer {
     height: 94px;
     margin: 0;

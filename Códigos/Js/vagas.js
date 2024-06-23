@@ -12,3 +12,22 @@ match.forEach(e=>{
         e.style.backgroundColor = "rgb(255,"+porcemtagem*5+",0)"
     }
 })
+
+let perfil = ["JavaScript","Inglês","Scrum","Git","GitHub","Node.js","HTML5","CSS3","React","Espanhol"]
+let vaga1Requisitos = document.querySelectorAll(".requisitos")
+
+let perfilMatchVaga1 = []
+perfil.map(e=>{
+    vaga1Requisitos.forEach(c=>{
+        if (e == c.textContent){
+            perfilMatchVaga1.push(e)
+        }
+    })
+})
+vaga1Requisitos.forEach(e=>{
+    perfilMatchVaga1.map(c=>{
+        if(c == e.textContent){
+            e.style.backgroundColor = "rgb(0,255,0)"
+        }
+    })
+})
