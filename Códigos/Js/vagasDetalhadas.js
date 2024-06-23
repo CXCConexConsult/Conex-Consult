@@ -170,6 +170,8 @@ let vagasDetalhadas = {
       '<span class="requisitos">Kubernetes</span>' +
       '<span class="requisitos">Segurança da Informação</span>' +
       '<span class="requisitos">Agile</span>' +
+      '<span class="requisitos">Curso superior em TI</span>' +
+      '<span class="requisitos">Scrum</span>' +
     '</div>' +
   '</div>',
   4: '<div id="vaga4" class= "vagaDetalhada">' +
@@ -225,13 +227,14 @@ let vagasDetalhadas = {
       '<span class="requisitos">CISSP</span>' +
       '<span class="requisitos">CEH</span>' +
       '<span class="requisitos">SIEM</span>' +
+      '<span class="requisitos">Curso superior em TI</span>' +
     '</div>' +
   '</div>'
 }
 let competenciaVagas = {
     1: ['JavaScript','Python','C#','Java','Scrum','IOS','Android','AWS','React','Curso superior em TI'],
     2: ['SQL', 'Python', 'R', 'ETL', 'Hadoop', 'Spark', 'GCP', 'Machine Learning', 'Curso superior em TI'],
-    3: ['AWS', 'Azure', 'GCP', 'Docker', 'Kubernetes', 'Segurança da Informação', 'Agile'],
-    4: ['Firewalls', 'IDS/IPS', 'Criptografia', 'ISO 27001', 'GDPR', 'CISSP', 'CEH', 'SIEM']
+    3: ['AWS', 'Azure', 'GCP', 'Docker', 'Kubernetes', 'Segurança da Informação', 'Agile','Curso superior em TI','Scrum'],
+    4: ['Firewalls', 'IDS/IPS', 'Criptografia', 'ISO 27001', 'GDPR', 'CISSP', 'CEH', 'SIEM','Curso superior em TI']
 }
 export {vagasDetalhadas,competenciaVagas}
