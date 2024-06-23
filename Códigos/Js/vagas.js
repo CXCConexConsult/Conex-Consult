@@ -37,3 +37,22 @@ console.log(vaga1Requisitos.length)
 console.log(perfilMatchVaga1.length)
 porcemtagem = 100*perfilMatchVaga1.length / vaga1Requisitos.length
 mudarProcemtagem(Math.trunc(porcemtagem))
+
+document.addEventListener('DOMContentLoaded', () => {
+    const vaga = document.querySelectorAll('vaga');
+    const detalhesvaga = document.getElementById('detalhes_vaga');
+
+    const vagadetalhada= {
+        1: 'Detalhes da Vaga 1: Descrição detalhada, requisitos, benefícios, etc.',
+        2: 'Detalhes da Vaga 2: Descrição detalhada, requisitos, benefícios, etc.',
+        3: 'Detalhes da Vaga 3: Descrição detalhada, requisitos, benefícios, etc.'
+        // Adicione mais detalhes conforme necessário
+    };
+
+    vaga.forEach(item => {
+        item.addEventListener('click', () => {
+            dataId = item.getAttribute('data-id');
+            detalhesvaga.textContent = vagadetalhada[dataId] || 'Detalhes não encontrados.';
+        });
+    });
+});
