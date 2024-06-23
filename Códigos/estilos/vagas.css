@@ -145,6 +145,8 @@ main section#vagas div.vaga {
     box-shadow: 2px 2px 6px 0px #4444445e;
     margin-bottom: 15px;
     cursor: pointer;
+    
+    
 }
 main div.vaga .headerVaga {
     display: flex;
