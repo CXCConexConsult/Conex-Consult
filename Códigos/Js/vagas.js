@@ -31,3 +31,22 @@ vaga1Requisitos.forEach(e=>{
         }
     })
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    const vaga = document.querySelectorAll('vaga');
+    const detalhesvaga = document.getElementById('detalhes_vaga');
+
+    const vagadetalhada= {
+        1: 'Detalhes da Vaga 1: Descrição detalhada, requisitos, benefícios, etc.',
+        2: 'Detalhes da Vaga 2: Descrição detalhada, requisitos, benefícios, etc.',
+        3: 'Detalhes da Vaga 3: Descrição detalhada, requisitos, benefícios, etc.'
+        // Adicione mais detalhes conforme necessário
+    };
+
+    vaga.forEach(item => {
+        item.addEventListener('click', () => {
+            dataId = item.getAttribute('data-id');
+            detalhesvaga.textContent = vagadetalhada[dataId] || 'Detalhes não encontrados.';
+        });
+    });
+});
