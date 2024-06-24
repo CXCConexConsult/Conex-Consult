@@ -60,6 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
             let vagaId = item.getAttribute('data-id');
             detalhesVaga.innerHTML = vagasDetalhadas[vagaId]
             visualizarCompetencias(vagaId)
+            let vagaDetalhada = document.querySelector(".vaga_detalhada")
+            vagaDetalhada.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
         });
     });
 });

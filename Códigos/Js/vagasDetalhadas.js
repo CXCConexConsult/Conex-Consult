@@ -229,12 +229,263 @@ let vagasDetalhadas = {
       '<span class="requisitos">SIEM</span>' +
       '<span class="requisitos">Curso superior em TI</span>' +
     '</div>' +
+  '</div>',
+  5: '<div id="vaga5" class="vagaDetalhada">' +
+    '<div class="empresa">' +
+      '<img src="../../imagens/Google_logo.png" alt="Google Logo">' +
+      '<span>Google</span>' +
+    '</div>' +
+    '<h1>Desenvolvedor Front-End</h1>' +
+    '<p><strong>Local:</strong> <a href="https://www.google.com">Google</a>, Rio de Janeiro/Rio de Janeiro</p>' +
+    '<p><strong>Tipo de Contrato:</strong> Tempo Integral</p>' +
+    '<h2>Resumo da Vaga:</h2>' +
+    '<p>Estamos à procura de um Desenvolvedor Front-End talentoso para se juntar à nossa equipe de desenvolvimento web. O candidato ideal deve ter sólida experiência com tecnologias de front-end, habilidades de resolução de problemas e capacidade de trabalhar em um ambiente dinâmico.</p>' +
+    '<h3>Responsabilidades:</h3>' +
+    '<ul>' +
+      '<li>Desenvolver interfaces de usuário interativas e responsivas.</li>' +
+      '<li>Colaborar com designers e desenvolvedores back-end para criar novas funcionalidades.</li>' +
+      '<li>Garantir a compatibilidade entre navegadores e dispositivos.</li>' +
+      '<li>Manter e otimizar sistemas existentes para melhorar a performance.</li>' +
+      '<li>Participar de revisões de código e seguir as melhores práticas de desenvolvimento.</li>' +
+    '</ul>' +
+    '<h3>Requisitos:</h3>' +
+    '<ul>' +
+      '<li>Bacharelado em Ciência da Computação, Engenharia de Software ou área relacionada.</li>' +
+      '<li>Experiência comprovada em desenvolvimento front-end (mínimo de 3 anos).</li>' +
+      '<li>Proficiência em HTML, CSS, JavaScript e frameworks como React ou Angular.</li>' +
+      '<li>Conhecimento em ferramentas de versionamento de código (por exemplo, Git).</li>' +
+      '<li>Experiência com metodologias ágeis (Scrum, Kanban).</li>' +
+      '<li>Excelentes habilidades de comunicação e capacidade de trabalhar em equipe.</li>' +
+      '<li>Capacidade de gerenciar múltiplas tarefas e trabalhar sob prazos apertados.</li>' +
+    '</ul>' +
+    '<h3>Diferenciais:</h3>' +
+    '<ul>' +
+      '<li>Experiência com desenvolvimento mobile (React Native).</li>' +
+      '<li>Conhecimento em DevOps e ferramentas de CI/CD.</li>' +
+      '<li>Experiência com serviços em nuvem (AWS, Google Cloud).</li>' +
+      '<li>Certificações relevantes na área de TI.</li>' +
+    '</ul>' +
+    '<h3>Benefícios:</h3>' +
+    '<ul>' +
+      '<li>Salário competitivo.</li>' +
+      '<li>Plano de saúde e odontológico.</li>' +
+      '<li>Vale refeição e/ou alimentação.</li>' +
+      '<li>Auxílio transporte.</li>' +
+      '<li>Programa de bônus baseado em desempenho.</li>' +
+      '<li>Oportunidades de desenvolvimento profissional e contínuo.</li>' +
+      '<li>Ambiente de trabalho inclusivo e colaborativo.</li>' +
+    '</ul>' +
+    '<h2>Como se Candidatar:</h2>' +
+    '<p>Interessados devem enviar o currículo atualizado e uma carta de apresentação para <a href="mailto:google@luravell.com">google@luravell.com</a> até <strong>data limite</strong>. Por favor, inclua no assunto do e-mail “Candidatura para Desenvolvedor Front-End – [Seu Nome]”.</p>' +
+    '<p>Junte-se ao Google e impulsione sua carreira na tecnologia!</p>' +
+    '<div class="match">' +
+      '<span class="requisitos">JavaScript</span>' +
+      '<span class="requisitos">HTML5</span>' +
+      '<span class="requisitos">CSS3</span>' +
+      '<span class="requisitos">React</span>' +
+      '<span class="requisitos">Angular</span>' +
+      '<span class="requisitos">Git</span>' +
+      '<span class="requisitos">Scrum</span>' +
+      '<span class="requisitos">Kanban</span>' +
+      '<span class="requisitos">React Native</span>' +
+      '<span class="requisitos">AWS</span>' +
+      '<span class="requisitos">Curso superior em TI</span>' +
+    '</div>' +
+  '</div>',
+  6: '<div id="vaga6" class="vagaDetalhada">' +
+    '<div class="empresa">' +
+      '<img src="../../imagens/Facebook_logo.png" alt="Facebook Logo">' +
+      '<span>Facebook</span>' +
+    '</div>' +
+    '<h1>Engenheiro de Software</h1>' +
+    '<p><strong>Local:</strong> <a href="https://www.facebook.com">Facebook</a>, Belo Horizonte/Minas Gerais</p>' +
+    '<p><strong>Tipo de Contrato:</strong> Tempo Integral</p>' +
+    '<h2>Resumo da Vaga:</h2>' +
+    '<p>Estamos em busca de um Engenheiro de Software experiente para integrar nossa equipe. O profissional ideal deve possuir ampla experiência em desenvolvimento de software, habilidades analíticas e capacidade de trabalhar em um ambiente ágil e colaborativo.</p>' +
+    '<h3>Responsabilidades:</h3>' +
+    '<ul>' +
+      '<li>Projetar, desenvolver e implementar soluções de software robustas.</li>' +
+      '<li>Colaborar com equipes multifuncionais para criar novos produtos e funcionalidades.</li>' +
+      '<li>Identificar e resolver problemas de software de forma eficaz.</li>' +
+      '<li>Participar de revisões de código e garantir a alta qualidade das entregas.</li>' +
+      '<li>Manter-se atualizado com as novas tecnologias e aplicar melhorias contínuas.</li>' +
+    '</ul>' +
+    '<h3>Requisitos:</h3>' +
+    '<ul>' +
+      '<li>Bacharelado em Ciência da Computação, Engenharia de Software ou área relacionada.</li>' +
+      '<li>Experiência comprovada em desenvolvimento de software (mínimo de 4 anos).</li>' +
+      '<li>Conhecimento em linguagens como Java, C++, Python ou similares.</li>' +
+      '<li>Experiência com frameworks e bibliotecas modernas.</li>' +
+      '<li>Familiaridade com metodologias ágeis.</li>' +
+      '<li>Excelentes habilidades de comunicação e trabalho em equipe.</li>' +
+      '<li>Capacidade de gerenciar prazos e múltiplas tarefas simultaneamente.</li>' +
+    '</ul>' +
+    '<h3>Diferenciais:</h3>' +
+    '<ul>' +
+      '<li>Experiência com desenvolvimento mobile.</li>' +
+      '<li>Conhecimento em DevOps e CI/CD.</li>' +
+      '<li>Experiência com serviços em nuvem.</li>' +
+      '<li>Certificações na área de tecnologia.</li>' +
+    '</ul>' +
+    '<h3>Benefícios:</h3>' +
+    '<ul>' +
+      '<li>Salário competitivo.</li>' +
+      '<li>Plano de saúde e odontológico.</li>' +
+      '<li>Vale refeição e/ou alimentação.</li>' +
+      '<li>Auxílio transporte.</li>' +
+      '<li>Programa de bônus baseado em desempenho.</li>' +
+      '<li>Oportunidades de desenvolvimento profissional e contínuo.</li>' +
+      '<li>Ambiente de trabalho inclusivo e colaborativo.</li>' +
+    '</ul>' +
+    '<h2>Como se Candidatar:</h2>' +
+    '<p>Interessados devem enviar o currículo atualizado e uma carta de apresentação para <a href="mailto:facebook@luravell.com">facebook@luravell.com</a> até <strong>data limite</strong>. Por favor, inclua no assunto do e-mail “Candidatura para Engenheiro de Software – [Seu Nome]”.</p>' +
+    '<p>Junte-se ao Facebook e faça parte de uma equipe inovadora!</p>' +
+    '<div class="match">' +
+      '<span class="requisitos">Curso superior em TI</span>' +
+      '<span class="requisitos">Java</span>' +
+      '<span class="requisitos">C++</span>' +
+      '<span class="requisitos">Python</span>' +
+      '<span class="requisitos">Agile</span>' +
+      '<span class="requisitos">CI/CD</span>' +
+      '<span class="requisitos">DevOps</span>' +
+      '<span class="requisitos">Mobile</span>' +
+      '<span class="requisitos">Cloud</span>' +
+      '<span class="requisitos">Scrum</span>' +
+      '<span class="requisitos">Kanban</span>' +
+    '</div>' +
+  '</div>',
+  7: '<div id="vaga4" class="vagaDetalhada">' +
+    '<div class="empresa">' +
+      '<img src="../../imagens/Amazon_logo.png" alt="Amazon Logo">' +
+      '<span>Amazon</span>' +
+    '</div>' +
+    '<h1>Desenvolvedor Back-End</h1>' +
+    '<p><strong>Local:</strong> <a href="https://www.amazon.com">Amazon</a>, Curitiba/Paraná</p>' +
+    '<p><strong>Tipo de Contrato:</strong> Tempo Integral</p>' +
+    '<h2>Resumo da Vaga:</h2>' +
+    '<p>Procuramos um Desenvolvedor Back-End experiente para integrar nossa equipe de TI. O candidato ideal deve ter profundo conhecimento em desenvolvimento de software, habilidades de resolução de problemas e capacidade de trabalhar em equipe.</p>' +
+    '<h3>Responsabilidades:</h3>' +
+    '<ul>' +
+      '<li>Desenvolver, testar e manter sistemas back-end eficientes.</li>' +
+      '<li>Colaborar com desenvolvedores front-end para integrar funcionalidades.</li>' +
+      '<li>Implementar e otimizar APIs e serviços.</li>' +
+      '<li>Identificar e corrigir problemas de desempenho e segurança.</li>' +
+      '<li>Participar de revisões de código e garantir a qualidade do software.</li>' +
+    '</ul>' +
+    '<h3>Requisitos:</h3>' +
+    '<ul>' +
+      '<li>Bacharelado em Ciência da Computação, Engenharia de Software ou área relacionada.</li>' +
+      '<li>Experiência comprovada em desenvolvimento back-end (mínimo de 3 anos).</li>' +
+      '<li>Conhecimento em linguagens como Java, Python, Ruby ou similares.</li>' +
+      '<li>Experiência com bancos de dados relacionais e não relacionais.</li>' +
+      '<li>Familiaridade com metodologias ágeis.</li>' +
+      '<li>Excelentes habilidades de comunicação e trabalho em equipe.</li>' +
+      '<li>Capacidade de gerenciar múltiplas tarefas e trabalhar sob prazos apertados.</li>' +
+    '</ul>' +
+    '<h3>Diferenciais:</h3>' +
+    '<ul>' +
+      '<li>Experiência com microsserviços.</li>' +
+      '<li>Conhecimento em DevOps e ferramentas de CI/CD.</li>' +
+      '<li>Experiência com serviços em nuvem (AWS, Azure).</li>' +
+      '<li>Certificações relevantes na área de TI.</li>' +
+    '</ul>' +
+    '<h3>Benefícios:</h3>' +
+    '<ul>' +
+      '<li>Salário competitivo.</li>' +
+      '<li>Plano de saúde e odontológico.</li>' +
+      '<li>Vale refeição e/ou alimentação.</li>' +
+      '<li>Auxílio transporte.</li>' +
+      '<li>Programa de bônus baseado em desempenho.</li>' +
+      '<li>Oportunidades de desenvolvimento profissional e contínuo.</li>' +
+      '<li>Ambiente de trabalho inclusivo e colaborativo.</li>' +
+    '</ul>' +
+    '<h2>Como se Candidatar:</h2>' +
+    '<p>Interessados devem enviar o currículo atualizado e uma carta de apresentação para <a href="mailto:amazon@luravell.com">amazon@luravell.com</a> até <strong>data limite</strong>. Por favor, inclua no assunto do e-mail “Candidatura para Desenvolvedor Back-End – [Seu Nome]”.</p>' +
+    '<p>Junte-se à Amazon e ajude a construir o futuro da tecnologia!</p>' +
+    '<div class="match">' +
+      '<span class="requisitos">Java</span>' +
+      '<span class="requisitos">Python</span>' +
+      '<span class="requisitos">Ruby</span>' +
+      '<span class="requisitos">SQL</span>' +
+      '<span class="requisitos">NoSQL</span>' +
+      '<span class="requisitos">Curso superior em TI</span>' +
+      '<span class="requisitos">Microsserviços</span>' +
+      '<span class="requisitos">CI/CD</span>' +
+      '<span class="requisitos">AWS</span>' +
+      '<span class="requisitos">Azure</span>' +
+    '</div>' +
+  '</div>',
+  8: '<div id="vaga5" class="vagaDetalhada">' +
+    '<div class="empresa">' +
+      '<img src="../../imagens/Netflix_logo.png" alt="Netflix Logo">' +
+      '<span>Netflix</span>' +
+    '</div>' +
+    '<h1>Analista de Dados</h1>' +
+    '<p><strong>Local:</strong> <a href="https://www.netflix.com">Netflix</a>, Porto Alegre/Rio Grande do Sul</p>' +
+    '<p><strong>Tipo de Contrato:</strong> Tempo Integral</p>' +
+    '<h2>Resumo da Vaga:</h2>' +
+    '<p>Estamos à procura de um Analista de Dados qualificado para se juntar à nossa equipe. O candidato ideal deve ter forte habilidade analítica, experiência em análise de dados e capacidade de trabalhar em um ambiente colaborativo e dinâmico.</p>' +
+    '<h3>Responsabilidades:</h3>' +
+    '<ul>' +
+      '<li>Coletar, processar e analisar grandes volumes de dados.</li>' +
+      '<li>Desenvolver relatórios e dashboards para suportar a tomada de decisão.</li>' +
+      '<li>Identificar tendências e padrões nos dados para gerar insights.</li>' +
+      '<li>Colaborar com diferentes equipes para entender as necessidades de dados.</li>' +
+      '<li>Garantir a precisão e integridade dos dados analisados.</li>' +
+    '</ul>' +
+    '<h3>Requisitos:</h3>' +
+    '<ul>' +
+      '<li>Bacharelado em Estatística, Matemática, Ciência da Computação ou área relacionada.</li>' +
+      '<li>Experiência comprovada em análise de dados (mínimo de 3 anos).</li>' +
+      '<li>Proficiência em SQL e ferramentas de visualização de dados (por exemplo, Tableau, Power BI).</li>' +
+      '<li>Conhecimento em linguagens de programação como Python ou R.</li>' +
+      '<li>Familiaridade com metodologias ágeis.</li>' +
+      '<li>Excelentes habilidades de comunicação e capacidade de trabalho em equipe.</li>' +
+      '<li>Capacidade de gerenciar múltiplas tarefas e trabalhar sob prazos apertados.</li>' +
+    '</ul>' +
+    '<h3>Diferenciais:</h3>' +
+    '<ul>' +
+      '<li>Experiência com Big Data e ferramentas como Hadoop ou Spark.</li>' +
+      '<li>Conhecimento em Machine Learning e Inteligência Artificial.</li>' +
+      '<li>Certificações relevantes na área de dados.</li>' +
+    '</ul>' +
+    '<h3>Benefícios:</h3>' +
+    '<ul>' +
+      '<li>Salário competitivo.</li>' +
+      '<li>Plano de saúde e odontológico.</li>' +
+      '<li>Vale refeição e/ou alimentação.</li>' +
+      '<li>Auxílio transporte.</li>' +
+      '<li>Programa de bônus baseado em desempenho.</li>' +
+      '<li>Oportunidades de desenvolvimento profissional e contínuo.</li>' +
+      '<li>Ambiente de trabalho inclusivo e colaborativo.</li>' +
+    '</ul>' +
+    '<h2>Como se Candidatar:</h2>' +
+    '<p>Interessados devem enviar o currículo atualizado e uma carta de apresentação para <a href="mailto:netflix@luravell.com">netflix@luravell.com</a> até <strong>data limite</strong>. Por favor, inclua no assunto do e-mail “Candidatura para Analista de Dados – [Seu Nome]”.</p>' +
+    '<p>Junte-se à Netflix e ajude a transformar dados em decisões estratégicas!</p>' +
+    '<div class="match">' +
+      '<span class="requisitos">SQL</span>' +
+      '<span class="requisitos">Python</span>' +
+      '<span class="requisitos">R</span>' +
+      '<span class="requisitos">Tableau</span>' +
+      '<span class="requisitos">Power BI</span>' +
+      '<span class="requisitos">Big Data</span>' +
+      '<span class="requisitos">Hadoop</span>' +
+      '<span class="requisitos">Spark</span>' +
+      '<span class="requisitos">Curso superior em TI</span>' +
+      '<span class="requisitos">Machine Learning</span>' +
+      '<span class="requisitos">AI</span>' +
+    '</div>' +
   '</div>'
+
 }
 let competenciaVagas = {
     1: ['JavaScript','Python','C#','Java','Scrum','IOS','Android','AWS','React','Curso superior em TI'],
     2: ['SQL', 'Python', 'R', 'ETL', 'Hadoop', 'Spark', 'GCP', 'Machine Learning', 'Curso superior em TI'],
     3: ['AWS', 'Azure', 'GCP', 'Docker', 'Kubernetes', 'Segurança da Informação', 'Agile','Curso superior em TI','Scrum'],
-    4: ['Firewalls', 'IDS/IPS', 'Criptografia', 'ISO 27001', 'GDPR', 'CISSP', 'CEH', 'SIEM','Curso superior em TI']
+    4: ['Firewalls', 'IDS/IPS', 'Criptografia', 'ISO 27001', 'GDPR', 'CISSP', 'CEH', 'SIEM','Curso superior em TI'],
+    5: ['JavaScript', 'HTML5', 'CSS3', 'React', 'Angular', 'Git', 'Scrum', 'Kanban', 'React Native', 'AWS','Curso superior em TI'],
+    6: ['Java', 'C++', 'Python', 'Agile', 'CI/CD', 'DevOps', 'Mobile', 'Cloud','Curso superior em TI','Scrum','Kanban'],
+    7: ['Java', 'Python', 'Ruby', 'SQL', 'NoSQL', 'Microsserviços', 'CI/CD', 'AWS', 'Azure','Curso superior em TI'],
+    8: ['SQL', 'Python', 'R', 'Tableau', 'Power BI', 'Big Data', 'Hadoop', 'Spark', 'Machine Learning', 'AI','Curso superior em TI']
 }
 export {vagasDetalhadas,competenciaVagas}
