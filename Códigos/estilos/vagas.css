@@ -17,6 +17,7 @@ select {
 }
 header {
     height: 62px;
+    z-index: 2;
 }
 header a#logo_container {
     display: flex;
@@ -186,6 +187,7 @@ section#vagas_container button#btn_verMais {
     cursor: pointer;
 }
 section.vaga_detalhada {
+    z-index: 1;
     position: sticky;
     display: flex;
     justify-content: center;

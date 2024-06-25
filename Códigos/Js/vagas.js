@@ -51,8 +51,10 @@ function mudarProcemtagem (){
         }
     })
 }
+
 document.addEventListener('DOMContentLoaded', () => {
     const vagaItem = document.querySelectorAll('.vaga');
+    let porcemtagem = document.querySelectorAll(".porcemtagem");
     const detalhesVaga = document.querySelector('.vaga_detalhada');
     visualizarCompetencias()
     vagaItem.forEach(item => {
@@ -67,6 +69,14 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         });
     });
+    
+    porcemtagem = [...porcemtagem]
+    let troca = []
+    porcemtagem.map((e,i)=>{
+        let porcemtagemInt = parseInt((porcemtagem[i].textContent).match(/\d+/)[0])
+        let vagaId = e.parentElement.parentElement.parentElement.getAttribute("data-id")
+    })
+    troca.push(porcemtagem[0])
+    porcemtagem[0]
+    console.log(troca)
 });
-
-

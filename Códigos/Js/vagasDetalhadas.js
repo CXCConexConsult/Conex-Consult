@@ -411,6 +411,8 @@ let vagasDetalhadas = {
       '<span class="requisitos">Curso superior em TI</span>' +
       '<span class="requisitos">Microsserviços</span>' +
       '<span class="requisitos">CI/CD</span>' +
+      '<span class="requisitos">Scrum</span>' +
+      '<span class="requisitos">Kanban</span>' +
       '<span class="requisitos">AWS</span>' +
       '<span class="requisitos">Azure</span>' +
     '</div>' +
@@ -485,7 +487,7 @@ let competenciaVagas = {
     4: ['Firewalls', 'IDS/IPS', 'Criptografia', 'ISO 27001', 'GDPR', 'CISSP', 'CEH', 'SIEM','Curso superior em TI'],
     5: ['JavaScript', 'HTML5', 'CSS3', 'React', 'Angular', 'Git', 'Scrum', 'Kanban', 'React Native', 'AWS','Curso superior em TI'],
     6: ['Java', 'C++', 'Python', 'Agile', 'CI/CD', 'DevOps', 'Mobile', 'Cloud','Curso superior em TI','Scrum','Kanban'],
-    7: ['Java', 'Python', 'Ruby', 'SQL', 'NoSQL', 'Microsserviços', 'CI/CD', 'AWS', 'Azure','Curso superior em TI'],
+    7: ['Java', 'Python', 'Ruby', 'SQL', 'NoSQL', 'Microsserviços', 'CI/CD', 'AWS', 'Azure','Curso superior em TI','Scrum','Kanban'],
     8: ['SQL', 'Python', 'R', 'Tableau', 'Power BI', 'Big Data', 'Hadoop', 'Spark', 'Machine Learning', 'AI','Curso superior em TI']
 }
 export {vagasDetalhadas,competenciaVagas}
