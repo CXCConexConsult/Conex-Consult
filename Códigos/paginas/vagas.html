@@ -11,7 +11,7 @@
 <body>
     <header id="header">
         <div id="logo">
-            <a href="index.html" id="logo_container">
+            <a href="vagas.html" id="logo_container">
                 <img src="../../imagens/logo.png" id="logo_CXC" alt="logo_CXC">
                 <img src="../../imagens/logo_nome.png" id="logo_nome_CXC" alt="logo_nome_CXC"> 
            </a>        
@@ -20,7 +20,7 @@
             <a id="contato" href="">Contato</a>
             <a id="contato" href="">Criar Vaga</a>
             <a id="navCadastrar" class="cadastrar"  target="_self">Cadastrar</a>
-            <a id="vagas" href="../../index.html" target="_self" rel="prev">Entrar</a>
+            <a id="entrar" href="../../index.html" target="_self" rel="prev">Entrar</a>
         </nav>
     </header>
     <main>
@@ -37,7 +37,7 @@
             </div>
             <div id="campo_filtros_container">
                 <div id="campo_filtros">
-                    <select name="nivel_exp" id="nivel_exp" >
+                    <select class="filtro" name="nivel_exp" id="nivel_exp" >
                         <option value="default">Nível de experiencia</option>
                         <option value="estágio">Estágio</option>
                         <option value="assistente">Assistente</option>
@@ -45,7 +45,7 @@
                         <option value="pleno">Pleno</option>
                         <option value="senior">Senior</option>
                     </select>
-                    <select name="data_publicação" id="data_publicação">
+                    <select class="filtro" name="data_publicação" id="data_publicação">
                         <option value="default">Data de publicação</option>
                         <option value="1h">Há 1 hora</option>
                         <option value="4h">Há 4 horas</option>
@@ -54,14 +54,14 @@
                         <option value="1 semana">Há 1 semana</option>
                         <option value="1 mês">Há 1 mês</option>
                     </select>
-                    <select name="Correspondencia" id="Correspondencia">
+                    <select class="filtro" name="Correspondencia" id="Correspondencia">
                         <option value="default">Correspondência</option>
                         <option value="maior70%">Maior que 70%</option>
                         <option value="maior50%">Maior que 50%</option>
                         <option value="maior30%">Maior que 30%</option>
                         <option value="menor30%">Menor que 30%</option>
                     </select>
-                    <select name="empresa" id="empresa">
+                    <select class="filtro" name="empresa" id="empresa">
                         <option value="default">Empresa</option>
                         <option value="Microsoft">Microsoft</option>
                         <option value="Amazon">Amazon</option>
@@ -69,7 +69,7 @@
                         <option value="Nubank">Nubank</option>
                     </select>
                 </div>
-                <p>Limpar filtros</p>
+                <p id="btnLimparFiltros">Limpar filtros</p>
             </div>
         </section> 
         <div id="container_vagas">
@@ -343,7 +343,53 @@
             <a href="https://twitter.com/ConexConsult"  id="img_twitter" target="_blank"><img src="../../imagens/ico_twitter.png" alt="icone twitter"><p>@ConexConsult</p></a>
         </div>
     </footer>
+    <!-- Pop Up -->
+    <div id="myModal" class="modal hideModal">
+        <div class="modal-content">
+        <span class="span-close"><img src="../../imagens/closeButton.png" alt="botão fechar" id="btnClose"></span>
+        <h1>É novo por aqui? Cadastre-se abaixo</h1>
+            <form>
+                <label for="nome">
+                    Nome completo
+                    <input type="text" name="nome" id="nome" oninput="converterParaMaiusculas(event)" oninput="somenteletras(event)">
+                </label>
+                <div id="local" class="campo">
+                    <label id="labelCidade" for="cidade">
+                        Cidade
+                        <input type="text" name="cidade" id="cidade" oninput="converterParaMaiusculas(event)" oninput="somenteletras(event)" >
+                    </label>
+                    <label id="labelUf" for="uf">
+                        UF
+                        <input type="text" name="uf" id="uf" maxlength="2" oninput="converterParaMaiusculas(event)" oninput="somenteletras(event)">
+                        
+                    </label>
+                </div>  
+                <label for="emailCadastro">
+                    E-mail
+                    <input type="email" name="email" id="emailCadastro" autocomplete="email">
+                </label>
+                
+                <label for="senhaCadastro" id="label-senha">
+                    Senha
+                    <div id="campo-senha">
+                        <input id="senhaCadastro" type="password" name="senha" id="senhaCadastro">
+                        <span class="toggle-password-pop" onclick="togglePasswordPopUp()"><img src="../../imagens/visibility_on.png" alt="exibir senha" id="img_visaoSenhaPop"></span>
+                    </div>
+                </label>
+                <label for="confirmarSenha">
+                    Confirmação de senha:
+                    <div id="passwordPop-container">
+                        <input type="password" name="confirmarSenha" id="confirmarSenha">
+                        <span class="toggle-password-pop" onclick="toggleConfirmarPasswordPopUp()"><img src="../../imagens/visibility_on.png" alt="exibir senha" id="img_visaoConfirmarSenhaPop"></span>
+                    </div>
+                    <p id="confirmacao"></p>
+                </label>
+                <input id="btnCadastrar" type="submit" value="Cadastrar-se">
+            </form>
+        </div>
+    </div>
     <script type="module" src="../Js/vagas.js"></script>
     <script type="module" src="../js/vagasDetalhadas.js"></script>
+    <script src="../Js/popUpCadastro.js"></script>
 </body>
 </html>

@@ -69,14 +69,37 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         });
     });
-    
+
+    //trocar possição das vagas
+    let vagas = document.querySelector('#vagas')
     porcemtagem = [...porcemtagem]
     let troca = []
-    porcemtagem.map((e,i)=>{
+    porcemtagem.map((e,i,l)=>{
         let porcemtagemInt = parseInt((porcemtagem[i].textContent).match(/\d+/)[0])
+        for(let c = 1; c < porcemtagem.length; c++){
+            let proPorcemtagemInt = parseInt((porcemtagem[c].textContent).match(/\d+/)[0])
+            console.log(proPorcemtagemInt)
+        }
         let vagaId = e.parentElement.parentElement.parentElement.getAttribute("data-id")
     })
-    troca.push(porcemtagem[0])
-    porcemtagem[0]
-    console.log(troca)
+    // console.log(porcemtagem)
+    // troca.push(porcemtagem[2])
+    // porcemtagem[2] = porcemtagem[3]
+    // porcemtagem[3] = troca[0]
+    // console.log(porcemtagem[2].parentElement.parentElement.parentElement)
+    // vagas.appendChild(porcemtagem[2].parentElement.parentElement.parentElement)
+    
+
 });
+
+
+
+//função de limpar filtros
+let filtros = document.querySelectorAll(".filtro")
+let btnLimparFiltros = document.querySelector("#btnLimparFiltros")
+
+btnLimparFiltros.addEventListener('click',()=>{
+    [...filtros].forEach(e=>{
+        e.value = 'default'
+    })
+})
