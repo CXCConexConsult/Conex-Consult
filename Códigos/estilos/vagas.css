@@ -188,7 +188,6 @@ section#vagas_container button#btn_verMais {
 }
 section.vaga_detalhada {
     z-index: 1;
-    position: sticky;
     display: flex;
     justify-content: center;
     background-color: var(--primaria);
@@ -205,6 +204,21 @@ section.vaga_detalhada {
     position: sticky;
     top: 70px;
     left: 505px;
+}
+div.ocultar_vaga {
+    z-index: 5;
+    margin-top: 100px;
+    width: 100%;
+    height: 1809px;
+    background-image: linear-gradient(to top, white 85%, rgba(255, 255, 255, 0.596),rgba(255, 255, 255, 0));
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+div.ocultar_vaga p{
+    margin-top: 300px;
+    font: bold 20px arial;
 }
 main section.vaga_detalhada img {
     width: 56px;

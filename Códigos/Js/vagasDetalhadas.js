@@ -1,5 +1,8 @@
 let vagasDetalhadas = {
-    1:'<div id="vaga1" class= "vagaDetalhada"> ' +
+    1:'<div class="ocultar_vaga"> '+
+        '<p>Faça login para ver a vaga completa</p> ' +
+      '</div>' +
+    '<div id="vaga1" class= "vagaDetalhada"> ' +
     '<div class="empresa">' +
       '<img src="../../imagens/Microsoft_logo.png" alt="Microsoft Logo">' +
       '<span>Microsoft</span>' +
@@ -60,7 +63,10 @@ let vagasDetalhadas = {
       '<span class="requisitos">Curso superior em TI</span>' +
     '</div>' +
   '</div>',
-    2:  '<div id="vaga2" class= "vagaDetalhada">' +
+    2:'<div class="ocultar_vaga"> '+
+        '<p>Faça login para ver a vaga completa</p> ' +
+      '</div>' +  
+    '<div id="vaga2" class= "vagaDetalhada">' +
     '<div class="empresa">' +
       '<img src="../../imagens/Google_logo.png" alt="Google Logo">' +
       '<span>Google</span>' +
@@ -117,7 +123,11 @@ let vagasDetalhadas = {
       '<span class="requisitos">Curso superior em TI</span>' +
     '</div>' +
   '</div>',
-  3: '<div id="vaga3" class= "vagaDetalhada">' +
+  3:
+'<div class="ocultar_vaga"> '+
+        '<p>Faça login para ver a vaga completa</p> ' +
+      '</div>' + 
+  '<div id="vaga3" class= "vagaDetalhada">' +
     '<div class="empresa">' +
       '<img src="../../imagens/Amazon_logo.png" alt="Amazon Logo">' +
       '<span>Amazon</span>' +
@@ -174,7 +184,10 @@ let vagasDetalhadas = {
       '<span class="requisitos">Scrum</span>' +
     '</div>' +
   '</div>',
-  4: '<div id="vaga4" class= "vagaDetalhada">' +
+  4:'<div class="ocultar_vaga"> '+
+        '<p>Faça login para ver a vaga completa</p> ' +
+      '</div>' + 
+  '<div id="vaga4" class= "vagaDetalhada">' +
     '<div class="empresa">' +
       '<img src="../../imagens/IBM_logo.png" alt="IBM Logo">' +
       '<span>IBM</span>' +
@@ -230,7 +243,10 @@ let vagasDetalhadas = {
       '<span class="requisitos">Curso superior em TI</span>' +
     '</div>' +
   '</div>',
-  5: '<div id="vaga5" class="vagaDetalhada">' +
+  5: '<div class="ocultar_vaga"> '+
+        '<p>Faça login para ver a vaga completa</p> ' +
+      '</div>' +
+  '<div id="vaga5" class="vagaDetalhada">' +
     '<div class="empresa">' +
       '<img src="../../imagens/Google_logo.png" alt="Google Logo">' +
       '<span>Google</span>' +
@@ -292,7 +308,10 @@ let vagasDetalhadas = {
       '<span class="requisitos">Curso superior em TI</span>' +
     '</div>' +
   '</div>',
-  6: '<div id="vaga6" class="vagaDetalhada">' +
+  6: '<div class="ocultar_vaga"> '+
+        '<p>Faça login para ver a vaga completa</p> ' +
+      '</div>' +
+  '<div id="vaga6" class="vagaDetalhada">' +
     '<div class="empresa">' +
       '<img src="../../imagens/Facebook_logo.png" alt="Facebook Logo">' +
       '<span>Facebook</span>' +
@@ -354,7 +373,10 @@ let vagasDetalhadas = {
       '<span class="requisitos">Kanban</span>' +
     '</div>' +
   '</div>',
-  7: '<div id="vaga4" class="vagaDetalhada">' +
+  7: '<div class="ocultar_vaga"> '+
+        '<p>Faça login para ver a vaga completa</p> ' +
+      '</div>' +
+  '<div id="vaga4" class="vagaDetalhada">' +
     '<div class="empresa">' +
       '<img src="../../imagens/Amazon_logo.png" alt="Amazon Logo">' +
       '<span>Amazon</span>' +
@@ -417,7 +439,10 @@ let vagasDetalhadas = {
       '<span class="requisitos">Azure</span>' +
     '</div>' +
   '</div>',
-  8: '<div id="vaga5" class="vagaDetalhada">' +
+  8: '<div class="ocultar_vaga"> '+
+        '<p>Faça login para ver a vaga completa</p> ' +
+      '</div>' +
+  '<div id="vaga5" class="vagaDetalhada">' +
     '<div class="empresa">' +
       '<img src="../../imagens/Netflix_logo.png" alt="Netflix Logo">' +
       '<span>Netflix</span>' +

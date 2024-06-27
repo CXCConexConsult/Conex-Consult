@@ -84,8 +84,8 @@ main#login section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 575px;
-    min-width: 394px;
+    max-width: 575px;
+    min-width: 280px;
     margin: 0 auto 0 5vw;
     transition: transform 0.3s ease;
 }
@@ -348,7 +348,7 @@ div.modal-content input #cidade {
 input:focus-visible {
     outline: none;
 }
- #senhaCadastro, #confirmarSenha { /* campo senha e campo comfirmação de senha do pop-up */
+#senhaCadastro, #confirmarSenha { /* campo senha e campo comfirmação de senha do pop-up */
     background-color: white;
     width: 100%;
     border: none;
@@ -380,7 +380,10 @@ div#passwordPop-container input{
     border: none;
     border-radius: 5px;
 }
-
+form a {
+    width: 170px;
+    margin: auto;
+}
 div.hideModal {
     display: none;
     transition: 2s;

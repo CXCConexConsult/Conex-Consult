@@ -1,3 +1,12 @@
+//Cadastro do usuario
+let loginFeito = true
+let btnentrar = document.querySelector('#btn_entrar')
+let btnCadastrar = document.querySelector('#btnCadastrar')
+let btnVagas = document.querySelector('#vagas')
+btnVagas.addEventListener('click',()=>{
+    loginFeito = false
+})
+
 //Configurações header dinâmico:
 let lastScrollTop = 0;
 const header = document.getElementById('header');
@@ -29,4 +38,6 @@ function marginFundo() {
 window.addEventListener('resize',(e)=>{
     marginFundo()
 })
-window.onload = marginFundo()
+marginFundo()
+
+export {loginFeito}

@@ -1,4 +1,5 @@
 import {vagasDetalhadas,competenciaVagas} from './vagasDetalhadas.js';
+import { loginFeito } from './index.js';
 
 let perfil = ["JavaScript","Inglês","Scrum","Git","GitHub","Node.js","HTML5","CSS3","React","Espanhol","SQL","Curso superior em TI"]
 function visualizarCompetencias(){
@@ -78,9 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
         let porcemtagemInt = parseInt((porcemtagem[i].textContent).match(/\d+/)[0])
         for(let c = 1; c < porcemtagem.length; c++){
             let proPorcemtagemInt = parseInt((porcemtagem[c].textContent).match(/\d+/)[0])
-            console.log(proPorcemtagemInt)
+            // console.log(proPorcemtagemInt)
         }
         let vagaId = e.parentElement.parentElement.parentElement.getAttribute("data-id")
+        e.parentElement.style.display = 'none'
     })
     // console.log(porcemtagem)
     // troca.push(porcemtagem[2])
@@ -92,8 +94,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-
-
+//ocultar vaga
+if(!loginFeito){
+    console.log(loginFeito)
+    ocultarVaga()
+    function ocultarVaga () {
+        let vaga = document.querySelector(".vagaDetalhada")
+        let divOcultar = document.querySelector(".ocultar_vaga")
+        console.log(vaga.getBoundingClientRect().height)
+        divOcultar.style.height = vaga.getBoundingClientRect().height + "px"
+    }
+    window.addEventListener('resize',ocultarVaga)
+}
 //função de limpar filtros
 let filtros = document.querySelectorAll(".filtro")
 let btnLimparFiltros = document.querySelector("#btnLimparFiltros")
