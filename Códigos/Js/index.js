@@ -29,10 +29,12 @@ window.addEventListener('scroll', function() {
 let imgFundo = document.querySelector("#img_fundo")
 let tela = document.querySelector("html")
 function marginFundo() {
-    if (tela.offsetWidth < 1156) {
-        imgFundo.style.marginTop = "70px"
-    }else {
-        imgFundo.style.marginTop = '0'
+    if(imgFundo) {
+        if (tela.offsetWidth < 1156) {
+            imgFundo.style.marginTop = "70px"
+        }else {
+            imgFundo.style.marginTop = '0'
+        }
     }
 }
 window.addEventListener('resize',(e)=>{
