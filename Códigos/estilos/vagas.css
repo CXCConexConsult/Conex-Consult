@@ -191,7 +191,7 @@ section.vaga_detalhada {
     justify-content: center;
     background-color: var(--primaria);
     width: 100%;
-    height: 660px;
+    height: calc(100vh - 225px);
     margin: 10px 10px 0 5px;
     padding: 5px;
     border: 1px solid gray;
@@ -216,7 +216,7 @@ div.ocultar_vaga {
     justify-content: center;
 }
 div.ocultar_vaga p{
-    margin-top: 300px;
+    margin-top: 215px;
     font: bold 20px arial;
 }
 main section.vaga_detalhada img {

@@ -1,6 +1,5 @@
 //Cadastro do usuario
 
-
 //Configurações header dinâmico:
 let lastScrollTop = 0;
 const header = document.getElementById('header');
@@ -36,19 +35,37 @@ window.addEventListener('resize',(e)=>{
 })
 marginFundo()
 
-let btn = [...document.querySelectorAll(".btn")]
+
+let btn = [...document.querySelectorAll(".btn")] //botões de ir para página de vagas
 btn.forEach(e=>{
+    let baterSenha = false
     e.addEventListener('click',()=>{
-        console.log(e)
         let loginFeito = false
         if(e.id == "vagas") {
             loginFeito = false
         } else {
             loginFeito = true
         }
+        if(e.id == "btnCadastrar") {
+            let senha = document.querySelector('#senhaCadastro')
+            let comfirmacaoSenha = document.querySelector('#confirmarSenha')
+            if (senha.value != comfirmacaoSenha.value){
+                alert('Senhas não batem')
+            } else {
+                baterSenha = true
+            }
+        }
         //manda para a URL um true ou false para o paramentro 'login'
         //com esse metodo não é necessário o href nos botões, pois ele tem o seu href
-        window.location.href = '/Códigos/paginas/vagas.html?login=' + loginFeito
-        console.log(window.location)
+        if(baterSenha || e.id != "btnCadastrar") {
+            window.location.href = '/Códigos/paginas/vagas.html?login=' + loginFeito
+        }
     })
 })
+
+// let btnCadastrar = document.querySelector("#btnCadastrar")
+// btnCadastrar.addEventListener('click',()=>{
+//     let senha = document.querySelector('#senhaCadastro')
+//     let comfirmacaoSenha = document.querySelector('#confirmarSenha')
+//     console.log(senha.textContent)
+// })

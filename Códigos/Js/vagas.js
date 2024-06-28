@@ -8,9 +8,16 @@ ocultarVaga(logado)
 //logar com o cadastro da tela de vagas:
 let btnCadastrar = document.querySelector("#btnCadastrar")
 btnCadastrar.addEventListener('click',()=>{
-    let modal = document.querySelector('#myModal')
-    modal.classList.add('hideModal')
-    ocultarVaga("true")
+    let senha = document.querySelector('#senhaCadastro')
+    let comfirmacaoSenha = document.querySelector('#confirmarSenha')
+    if (senha.value != comfirmacaoSenha.value){
+        alert('Senhas não batem')
+    } else {
+        let modal = document.querySelector('#myModal')
+        modal.classList.add('hideModal')
+        ocultarVaga("true")
+    }
+    
 })
 
 function ocultarVaga (logado){
@@ -87,13 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
             let vagaId = item.getAttribute('data-id');
             detalhesVaga.innerHTML = vagasDetalhadas[vagaId]
             visualizarCompetencias(vagaId)
-            let vagaDetalhada = document.querySelector(".vaga_detalhada")
-            vagaDetalhada.scrollTo({
+            detalhesVaga.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             })
             if (logado == 'true')
-                vagaDetalhada.firstChild.remove(vagaDetalhada.firstChild)
+                detalhesVaga.firstChild.remove(detalhesVaga.firstChild)
         });
     });
 
@@ -105,20 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
         let porcemtagemInt = parseInt((porcemtagem[i].textContent).match(/\d+/)[0])
         for(let c = 1; c < porcemtagem.length; c++){
             let proPorcemtagemInt = parseInt((porcemtagem[c].textContent).match(/\d+/)[0])
-            // console.log(proPorcemtagemInt)
         }
         let vagaId = e.parentElement.parentElement.parentElement.getAttribute("data-id")
         if(logado == 'false')
             e.parentElement.style.display = 'none'
     })
-    // console.log(porcemtagem)
-    // troca.push(porcemtagem[2])
-    // porcemtagem[2] = porcemtagem[3]
-    // porcemtagem[3] = troca[0]
-    // console.log(porcemtagem[2].parentElement.parentElement.parentElement)
-    // vagas.appendChild(porcemtagem[2].parentElement.parentElement.parentElement)
-    
-
 });
 
 //função de limpar filtros
@@ -129,5 +126,16 @@ btnLimparFiltros.addEventListener('click',()=>{
     [...filtros].forEach(e=>{
         e.value = 'default'
     })
+})
+
+//Aumentar tamanho da vaga comforme o scroll
+const detalhesVaga = document.querySelector('.vaga_detalhada')
+window.addEventListener('scroll',(e)=>{
+    if (document.documentElement.scrollTop >= 150) {
+        detalhesVaga.style.height = 'calc(100vh - 75px)'
+    }else {
+        detalhesVaga.style.height = 'calc(100vh - 225px)'
+    }
+    console.log(document.documentElement.scrollTop)
 })
 
