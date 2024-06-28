@@ -159,7 +159,6 @@ div.vaga .headerVaga .empresa {
     gap: 5px;
 }
 div.vaga .headerVaga .match .porcemtagem {
-    background-color: rgb(94, 255, 94);
     padding: 2px 6px;
     border-radius: 10px;
 }
@@ -237,7 +236,7 @@ div.vagaDetalhada div.empresa span {
     margin-left: 5px;
     font-size: 30px;
 }
-div.vagaDetalhada a {
+div.vagaDetalhada a, div.ocultar_vaga a {
     text-decoration: none;
     color: #a88900;
 }

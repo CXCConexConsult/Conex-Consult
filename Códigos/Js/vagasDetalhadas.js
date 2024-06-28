@@ -1,6 +1,6 @@
 let vagasDetalhadas = {
     1:'<div class="ocultar_vaga"> '+
-        '<p>Faça login para ver a vaga completa</p> ' +
+        '<p>Faça <a href="../../index.html" target="_self">login</a> para ver a vaga completa</p> ' +
       '</div>' +
     '<div id="vaga1" class= "vagaDetalhada"> ' +
     '<div class="empresa">' +
@@ -64,7 +64,7 @@ let vagasDetalhadas = {
     '</div>' +
   '</div>',
     2:'<div class="ocultar_vaga"> '+
-        '<p>Faça login para ver a vaga completa</p> ' +
+        '<p>Faça <a href="../../index.html" target="_self">login</a> para ver a vaga completa</p> ' +
       '</div>' +  
     '<div id="vaga2" class= "vagaDetalhada">' +
     '<div class="empresa">' +
@@ -125,7 +125,7 @@ let vagasDetalhadas = {
   '</div>',
   3:
 '<div class="ocultar_vaga"> '+
-        '<p>Faça login para ver a vaga completa</p> ' +
+        '<p>Faça <a href="../../index.html" target="_self">login</a> para ver a vaga completa</p> ' +
       '</div>' + 
   '<div id="vaga3" class= "vagaDetalhada">' +
     '<div class="empresa">' +
@@ -185,7 +185,7 @@ let vagasDetalhadas = {
     '</div>' +
   '</div>',
   4:'<div class="ocultar_vaga"> '+
-        '<p>Faça login para ver a vaga completa</p> ' +
+        '<p>Faça <a href="../../index.html" target="_self">login</a> para ver a vaga completa</p> ' +
       '</div>' + 
   '<div id="vaga4" class= "vagaDetalhada">' +
     '<div class="empresa">' +
@@ -244,7 +244,7 @@ let vagasDetalhadas = {
     '</div>' +
   '</div>',
   5: '<div class="ocultar_vaga"> '+
-        '<p>Faça login para ver a vaga completa</p> ' +
+        '<p>Faça <a href="../../index.html" target="_self">login</a> para ver a vaga completa</p> ' +
       '</div>' +
   '<div id="vaga5" class="vagaDetalhada">' +
     '<div class="empresa">' +
@@ -309,7 +309,7 @@ let vagasDetalhadas = {
     '</div>' +
   '</div>',
   6: '<div class="ocultar_vaga"> '+
-        '<p>Faça login para ver a vaga completa</p> ' +
+        '<p>Faça <a href="../../index.html" target="_self">login</a> para ver a vaga completa</p> ' +
       '</div>' +
   '<div id="vaga6" class="vagaDetalhada">' +
     '<div class="empresa">' +
@@ -374,7 +374,7 @@ let vagasDetalhadas = {
     '</div>' +
   '</div>',
   7: '<div class="ocultar_vaga"> '+
-        '<p>Faça login para ver a vaga completa</p> ' +
+        '<p>Faça <a href="../../index.html" target="_self">login</a> para ver a vaga completa</p> ' +
       '</div>' +
   '<div id="vaga4" class="vagaDetalhada">' +
     '<div class="empresa">' +
@@ -440,7 +440,7 @@ let vagasDetalhadas = {
     '</div>' +
   '</div>',
   8: '<div class="ocultar_vaga"> '+
-        '<p>Faça login para ver a vaga completa</p> ' +
+        '<p>Faça <a href="../../index.html" target="_self">login</a> para ver a vaga completa</p> ' +
       '</div>' +
   '<div id="vaga5" class="vagaDetalhada">' +
     '<div class="empresa">' +

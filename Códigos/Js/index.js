@@ -1,11 +1,5 @@
 //Cadastro do usuario
-let loginFeito = true
-let btnentrar = document.querySelector('#btn_entrar')
-let btnCadastrar = document.querySelector('#btnCadastrar')
-let btnVagas = document.querySelector('#vagas')
-btnVagas.addEventListener('click',()=>{
-    loginFeito = false
-})
+
 
 //Configurações header dinâmico:
 let lastScrollTop = 0;
@@ -42,4 +36,19 @@ window.addEventListener('resize',(e)=>{
 })
 marginFundo()
 
-export {loginFeito}
+let btn = [...document.querySelectorAll(".btn")]
+btn.forEach(e=>{
+    e.addEventListener('click',()=>{
+        console.log(e)
+        let loginFeito = false
+        if(e.id == "vagas") {
+            loginFeito = false
+        } else {
+            loginFeito = true
+        }
+        //manda para a URL um true ou false para o paramentro 'login'
+        //com esse metodo não é necessário o href nos botões, pois ele tem o seu href
+        window.location.href = '/Códigos/paginas/vagas.html?login=' + loginFeito
+        console.log(window.location)
+    })
+})

@@ -57,6 +57,9 @@ header nav {
     align-items: center;
     column-gap: 10px;
 }
+header nav #vagas {
+    cursor: pointer;
+}
 header nav a {
     color: var(--amarelo);
     font: normal 26px times;
