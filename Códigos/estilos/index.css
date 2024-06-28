@@ -192,7 +192,7 @@ main form p a:hover, #esqueciSenha a:hover{
     color: black;
 }
 footer {
-    height: 118px;
+    height: 119px;
     width: 100%;
     background-image: linear-gradient(to right, var(--azulEscuro),var(--azul));
     display: flex;
@@ -233,7 +233,7 @@ footer #img_mulher {
 }
 
 .header-hidden {
-    top: -117px; /* Ajuste este valor conforme a altura do seu cabeçalho */
+    top: -107px; /* Ajuste este valor conforme a altura do seu cabeçalho */
 }
 
 @media screen and (min-width: 1900px) and (min-height: 1360px) {
