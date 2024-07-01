@@ -104,7 +104,7 @@
      let senha = document.querySelector("#senhaCadastro")
      let confirmarSenha = document.querySelector("#confirmarSenha")
      let confirmacao = document.querySelector("#confirmacao")
-     if (senha.value == confirmarSenha.value) {
+     if (senha.value == confirmarSenha.value && senha.value != "") {
          confirmacao.textContent = "Senhas correspondem"
          confirmacao.style.color = "rgb(0, 100, 0)"
      } else if (senha.value != confirmarSenha.value){

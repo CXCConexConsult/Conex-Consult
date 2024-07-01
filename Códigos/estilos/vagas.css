@@ -42,6 +42,7 @@ header nav {
 }
 header nav a {
     font-size: 20px;
+    cursor: pointer;
 }
 main {
     margin-top: 62px;
