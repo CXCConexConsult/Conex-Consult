@@ -49,15 +49,6 @@ btn.forEach(e=>{
         if(e.id == "btnCadastrar") {
             let senha = document.querySelector('#senhaCadastro')
             let comfirmacaoSenha = document.querySelector('#confirmarSenha')
-            if(senha.value == ""){
-                
-            } else {
-                if (senha.value != comfirmacaoSenha.value){
-                
-                } else {
-                    baterSenha = true
-                }
-            }
             
         }
         //manda para a URL um true ou false para o paramentro 'login'
