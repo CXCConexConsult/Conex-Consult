@@ -11,26 +11,27 @@ btnCadastrar.addEventListener('click',()=>{
     let senha = document.querySelector('#senhaCadastro')
     let comfirmacaoSenha = document.querySelector('#confirmarSenha')
     if (senha.value != comfirmacaoSenha.value){
-        alert('Senhas não batem')
+        
     } else {
         let modal = document.querySelector('#myModal')
         modal.classList.add('hideModal')
         ocultarVaga("true")
     }
-    
 })
 
 function ocultarVaga (logado){
     let divOcultarVaga = document.querySelector(".ocultar_vaga")
-    let porcemtagem = document.querySelector(".match")
+    let porcemtagem = document.querySelectorAll(".match")
+    porcemtagem = [...porcemtagem]
     if (logado == 'true') {
         divOcultarVaga.remove(divOcultarVaga)
-        porcemtagem.removeAttribute('style')
+        porcemtagem.forEach(e=>{
+            e.removeAttribute('style')
+        })
     } else {
         document.querySelector(".vaga_detalhada").prepend(divOcultarVaga)
     }
 }
-
 
 let perfil = ["JavaScript","Inglês","Scrum","Git","GitHub","Node.js","HTML5","CSS3","React","Espanhol","SQL","Curso superior em TI"]
 function visualizarCompetencias(){
@@ -136,6 +137,5 @@ window.addEventListener('scroll',(e)=>{
     }else {
         detalhesVaga.style.height = 'calc(100vh - 225px)'
     }
-    console.log(document.documentElement.scrollTop)
 })
 

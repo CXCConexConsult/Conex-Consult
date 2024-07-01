@@ -28,6 +28,7 @@ header div#logo {
     width: 191px;
     padding: 0 10px;
     align-items: center;
+    gap: 10px;
 }
 header #logo_CXC {
     width: 41px;
