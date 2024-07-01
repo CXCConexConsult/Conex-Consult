@@ -49,7 +49,9 @@ btn.forEach(e=>{
         if(e.id == "btnCadastrar") {
             let senha = document.querySelector('#senhaCadastro')
             let comfirmacaoSenha = document.querySelector('#confirmarSenha')
-            
+            if(senha.value != "" && senha.value == comfirmacaoSenha.value){
+                baterSenha = true
+            }
         }
         //manda para a URL um true ou false para o paramentro 'login'
         //com esse metodo não é necessário o href nos botões, pois ele tem o seu href

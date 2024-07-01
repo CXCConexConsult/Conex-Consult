@@ -2,9 +2,13 @@ import {vagasDetalhadas,competenciaVagas} from './vagasDetalhadas.js';
 
 //Usuário com login ou sem login:
 let url = new URLSearchParams(window.location.search)
-let logado = url.get('login')
+let urlLogado = url.get('login')
+let logado = "false"
+if (urlLogado == "true"){
+    logado = "true"
+}
 ocultarVaga(logado)
-
+addBotaoPerfil(logado)
 //logar com o cadastro da tela de vagas:
 let btnCadastrar = document.querySelector("#btnCadastrar")
 btnCadastrar.addEventListener('click',()=>{
@@ -16,6 +20,8 @@ btnCadastrar.addEventListener('click',()=>{
         let modal = document.querySelector('#myModal')
         modal.classList.add('hideModal')
         ocultarVaga("true")
+        addBotaoPerfil("true")
+        logado = "true"
     }
 })
 
@@ -33,7 +39,32 @@ function ocultarVaga (logado){
     }
 }
 
+//trocar cadastrar e entrar por perfil:
+function addBotaoPerfil (logado){
+    let btnCadastrar = document.querySelector("#navCadastrar")
+    let btnEntrar = document.querySelector("#entrar")
+    let nav = document.querySelector("#navBotoes")
+    if (logado == "true") {
+        btnCadastrar.remove(btnCadastrar)
+        btnEntrar.remove(btnEntrar)
+
+        let btnPerfil = document.createElement('a')
+        btnPerfil.setAttribute('id','btnPerfil')
+        btnPerfil.textContent = "Perfil"
+
+        let btnSair = document.createElement('a') 
+        btnSair.setAttribute('id','btnSair')
+        btnSair.setAttribute('href','../../index.html')
+        btnSair.textContent = "Sair"
+
+        nav.appendChild(btnPerfil)
+        nav.appendChild(btnSair)
+        nav.style.width = "360px"
+    }
+}
+
 let perfil = ["JavaScript","Inglês","Scrum","Git","GitHub","Node.js","HTML5","CSS3","React","Espanhol","SQL","Curso superior em TI"]
+
 function visualizarCompetencias(){
     let vaga1Requisitos = document.querySelectorAll(".requisitos")
     let perfilMatchVaga = []
@@ -55,6 +86,7 @@ function visualizarCompetencias(){
     porcemtagem = 100*perfilMatchVaga.length / vaga1Requisitos.length
     mudarProcemtagem(Math.trunc(porcemtagem))
 }
+
 function mudarProcemtagem (){
     let match = document.querySelectorAll(".porcemtagem")
     let perfilMatchVaga = []
@@ -70,11 +102,9 @@ function mudarProcemtagem (){
 
         let porcemtagem = 100*perfilMatchVaga.length / competenciaVagas[vagaId].length
         perfilMatchVaga = []
-
         e.textContent = Math.trunc(porcemtagem) + "%"
         
         //transforma a procemtagem em número
-    
         porcemtagem = parseInt(e.textContent.match(/\d+/))
         //altera a cor de acordo com a porcemtagem
         if (porcemtagem > 50) {
@@ -84,6 +114,7 @@ function mudarProcemtagem (){
         }
     })
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const vagaItem = document.querySelectorAll('.vaga');
@@ -99,8 +130,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 top: 0,
                 behavior: 'smooth'
             })
-            if (logado == 'true')
+            if (logado == 'true') {
                 detalhesVaga.firstChild.remove(detalhesVaga.firstChild)
+            }
         });
     });
 
