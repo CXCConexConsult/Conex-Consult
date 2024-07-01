@@ -5,24 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conex Consult</title>
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="Códigos/estilos/style.css  ">
-    <link rel="stylesheet" href="Códigos/estilos/styleMobile.css"> 
+    <link rel="stylesheet" href="Códigos/estilos/index.css  ">
+    <link rel="stylesheet" href="Códigos/estilos/indexMobile.css"> 
 </head>
 <body>
     <header id="header">
         <div id="logo">
             <img src="imagens/logo.png" id="logo_CXC" alt="logo_CXC">
-           <a href="index.html">
-             <img src="imagens/logo_nome.png" id="logo_nome_CXC" alt="logo_nome_CXC"> 
-           </a>   
+            <img src="imagens/logo_nome.png" id="logo_nome_CXC" alt="logo_nome_CXC"> 
         </div>
         <nav>
             <a id="contato" href="">Contato</a>
-            <a id="vagas" href="">Vagas</a>
+            <a id="vagas" class="btn"  target="_self" rel="next">Vagas</a>
             <a id="navCadastrar" class="cadastrar"  target="_self">Cadastrar</a>
         </nav>
     </header>
-    <main>
+    <main id="login">
         <div class="containerCadastro">
             <section id="cadastro">
                 <h1>Busque oportunidades de emprego de forma mais eficiente!</h1>
@@ -42,8 +40,10 @@
                         <p id="esqueciSenha"><a href="">Esqueci minha senha</a></p>
                         
                     </div>
-                    <input type="submit" id="btn_entrar"
-                    class="input"  value="Entrar">
+                    <a >
+                        <input type="button" id="btn_entrar"
+                        class="input btn"  value="Entrar">
+                    </a>
                     <p id="Pcadastro" >Ainda não possui conta na plataforma? <a class="cadastrar">Faça seu cadastro</a></p>
                 </form>
             </section>
@@ -101,13 +101,13 @@
                     </div>
                     <p id="confirmacao"></p>
                 </label>
-                <input id="btnCadastrar" type="submit" value="Cadastrar-se">
+                <a><input id="btnCadastrar" type="button" class="btn" value="Cadastrar-se"></a>
             </form>
         
         </div>
     </div>
 
+    <script type="module" src="Códigos/Js/index.js"></script>
+    <script src="Códigos/Js/popUpCadastro.js"></script>
 </body>
-<script src="Códigos/Js/javaScript.js"></script>
-
 </html>

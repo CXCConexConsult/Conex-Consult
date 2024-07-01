@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas</title>
+    <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/index.css">
+    <link rel="stylesheet" href="../estilos/vagas.css">
+</head> 
+<body>
+    <header id="header">
+        <div id="logo">
+            <img src="../../imagens/logo.png" id="logo_CXC" alt="logo_CXC">
+            <img src="../../imagens/logo_nome.png" id="logo_nome_CXC" alt="logo_nome_CXC">     
+        </div>
+        <nav>
+            <a id="contato" href="">Contato</a>
+            <a id="contato" href="">Criar Vaga</a>
+            <a id="navCadastrar" class="cadastrar"  target="_self">Cadastrar</a>
+            <a id="entrar" href="../../index.html" target="_self" rel="prev">Entrar</a>
+        </nav>
+    </header>
+    <main>
+        <section id="busca">
+            <div id="campo_busca">
+                <div id="campo_buscar_vaga">
+                    <input type="text" name="buscar_vaga" id="buscar_vaga" placeholder="Buscar vaga...">
+                    <img src="../../imagens/search.png" alt="botão pesquisar">
+                </div>
+                <div id="campo_buscar_local">
+                    <input type="text" name="buscar_local" id="buscar_local" placeholder="Cidade, Estado, País">
+                    <img src="../../imagens/search.png" alt="botão pesquisar">
+                </div>
+            </div>
+            <div id="campo_filtros_container">
+                <div id="campo_filtros">
+                    <select class="filtro" name="nivel_exp" id="nivel_exp" >
+                        <option value="default">Nível de experiencia</option>
+                        <option value="estágio">Estágio</option>
+                        <option value="assistente">Assistente</option>
+                        <option value="junior">Júnior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                    <select class="filtro" name="data_publicação" id="data_publicação">
+                        <option value="default">Data de publicação</option>
+                        <option value="1h">Há 1 hora</option>
+                        <option value="4h">Há 4 horas</option>
+                        <option value="8h">Há 8 horas</option>
+                        <option value="24h">Há 24 horas</option>
+                        <option value="1 semana">Há 1 semana</option>
+                        <option value="1 mês">Há 1 mês</option>
+                    </select>
+                    <select class="filtro" name="Correspondencia" id="Correspondencia">
+                        <option value="default">Correspondência</option>
+                        <option value="maior70%">Maior que 70%</option>
+                        <option value="maior50%">Maior que 50%</option>
+                        <option value="maior30%">Maior que 30%</option>
+                        <option value="menor30%">Menor que 30%</option>
+                    </select>
+                    <select class="filtro" name="empresa" id="empresa">
+                        <option value="default">Empresa</option>
+                        <option value="Microsoft">Microsoft</option>
+                        <option value="Amazon">Amazon</option>
+                        <option value="Netflix">Netflix</option>
+                        <option value="Nubank">Nubank</option>
+                    </select>
+                </div>
+                <p id="btnLimparFiltros">Limpar filtros</p>
+            </div>
+        </section> 
+        <div id="container_vagas">
+            <section id="vagas_container">
+                <section id="vagas">
+                    <div id="ordem_container">
+                        <select name="ordem" id="ordem">
+                            <option value="ordem decrescente">Ordem Decrescente</option>
+                            <option value="ordem decrescente">Ordem Crescente</option>
+                        </select>
+                    </div>
+    
+                    <div class="vaga" data-id="5">
+                        <div class="headerVaga">
+                            <div class="empresa">
+                                <img src="../../imagens/Google_logo.png" alt="Logo Google">
+                                <span>Google</span>
+                            </div>
+                            <div class="match">
+                                <span>Correspondência:</span>
+                                <span class="porcemtagem" id="porcemtagemVaga5">95%</span>
+                            </div>
+                        </div>
+                        <div class="bodyVaga">
+                            <div class="detalhes">
+                                <p>Desenvolvedor Front-End</p>
+                            </div>
+                        </div>
+                        <div class="footerVaga">
+                            <span class="dataVaga">Há 2 horas</span>
+                            <span class="localVaga">Rio de Janeiro</span>
+                            <span class="salarioVaga">R$: 7.500</span>
+                        </div>
+                    </div>
+
+                    <div class="vaga" data-id="1">
+                        <div class="headerVaga">
+                            <div class="empresa">
+                                <img src="../../imagens/Microsoft_logo.png" alt="Logo microsoft">
+                                <span>Microsoft</span>
+                            </div>
+                            <div class="match">
+                                <span>Correspondência:</span>
+                                <span class="porcemtagem" id="porcemtagemVaga1">89%</span>
+                            </div>
+                        </div>
+                        <div class="bodyVaga">
+                            <div class="detalhes">
+                                <p>Desenvolvedor de Software</p>
+                            </div>
+                        </div>
+                        <div class="footerVaga">
+                            <span class="dataVaga">Há 4 horas</span>
+                            <span class="localVaga">São Paulo</span>
+                            <span class="salarioVaga">R$: 8.000</span>
+                        </div>
+                    </div>
+
+                    <div class="vaga" data-id="7">
+                        <div class="headerVaga">
+                            <div class="empresa">
+                                <img src="../../imagens/Amazon_logo.png" alt="Logo Amazon">
+                                <span>Amazon</span>
+                            </div>
+                            <div class="match">
+                                <span>Correspondência:</span>
+                                <span class="porcemtagem" id="porcemtagemVaga7">91%</span>
+                            </div>
+                        </div>
+                        <div class="bodyVaga">
+                            <div class="detalhes">
+                                <p>Desenvolvedor Back-End</p>
+                            </div>
+                        </div>
+                        <div class="footerVaga">
+                            <span class="dataVaga">Há 3 dias</span>
+                            <span class="localVaga">Curitiba</span>
+                            <span class="salarioVaga">R$: 8.500</span>
+                        </div>
+                    </div>
+
+                    <div class="vaga" data-id="2">
+                        <div class="headerVaga">
+                            <div class="empresa">
+                                <img src="../../imagens/Google_logo.png" alt="Logo Google">
+                                <span>Google</span>
+                            </div>
+                            <div class="match">
+                                <span>Correspondência:</span>
+                                <span class="porcemtagem" id="porcemtagemVaga2">92%</span>
+                            </div>
+                        </div>
+                        <div class="bodyVaga">
+                            <div class="detalhes">
+                                <p>Engenheiro de Dados</p>
+                            </div>
+                        </div>
+                        <div class="footerVaga">
+                            <span class="dataVaga">Há 2 dias</span>
+                            <span class="localVaga">Rio de Janeiro</span>
+                            <span class="salarioVaga">R$: 12.000</span>
+                        </div>
+                    </div>
+
+                    <div class="vaga" data-id="3">
+                        <div class="headerVaga">
+                            <div class="empresa">
+                                <img src="../../imagens/Amazon_logo.png" alt="Logo Amazon">
+                                <span>Amazon</span>
+                            </div>
+                            <div class="match">
+                                <span>Correspondência:</span>
+                                <span class="porcemtagem" id="porcemtagemVaga3">87%</span>
+                            </div>
+                        </div>
+                        <div class="bodyVaga">
+                            <div class="detalhes">
+                                <p>Arquiteto de Soluções</p>
+                            </div>
+                        </div>
+                        <div class="footerVaga">
+                            <span class="dataVaga">Há 1 semana</span>
+                            <span class="localVaga">Curitiba</span>
+                            <span class="salarioVaga">R$: 14.000</span>
+                        </div>
+                    </div>
+
+                    <div class="vaga" data-id="6">
+                        <div class="headerVaga">
+                            <div class="empresa">
+                                <img src="../../imagens/Facebook_logo.png" alt="Logo Facebook">
+                                <span>Facebook</span>
+                            </div>
+                            <div class="match">
+                                <span>Correspondência:</span>
+                                <span class="porcemtagem" id="porcemtagemVaga6">88%</span>
+                            </div>
+                        </div>
+                        <div class="bodyVaga">
+                            <div class="detalhes">
+                                <p>Engenheiro de Software</p>
+                            </div>
+                        </div>
+                        <div class="footerVaga">
+                            <span class="dataVaga">Há 1 dia</span>
+                            <span class="localVaga">Belo Horizonte</span>
+                            <span class="salarioVaga">R$: 9.200</span>
+                        </div>
+                    </div>
+                    
+                    <div class="vaga" data-id="8">
+                        <div class="headerVaga">
+                            <div class="empresa">
+                                <img src="../../imagens/Netflix_logo.png" alt="Logo Netflix">
+                                <span>Netflix</span>
+                            </div>
+                            <div class="match">
+                                <span>Correspondência:</span>
+                                <span class="porcemtagem" id="porcemtagemVaga8">92%</span>
+                            </div>
+                        </div>
+                        <div class="bodyVaga">
+                            <div class="detalhes">
+                                <p>Analista de Dados</p>
+                            </div>
+                        </div>
+                        <div class="footerVaga">
+                            <span class="dataVaga">Há 5 dias</span>
+                            <span class="localVaga">Porto Alegre</span>
+                            <span class="salarioVaga">R$: 7.800</span>
+                        </div>
+                    </div>
+
+                    <div class="vaga" data-id="4">
+                        <div class="headerVaga">
+                            <div class="empresa">
+                                <img src="../../imagens/IBM_logo.png" alt="Logo IBM">
+                                <span>IBM</span>
+                            </div>
+                            <div class="match">
+                                <span>Correspondência:</span>
+                                <span class="porcemtagem" id="porcemtagemVaga4">55%</span>
+                            </div>
+                        </div>
+                        <div class="bodyVaga">
+                            <div class="detalhes">
+                                <p>Analista de Segurança da Informação</p>
+                            </div>
+                        </div>
+                        <div class="footerVaga">
+                            <span class="dataVaga">Há 3 dias</span>
+                            <span class="localVaga">Brasília</span>
+                            <span class="salarioVaga">R$: 10.000</span>
+                        </div>
+                    </div>
+                </section>
+                <button id="btn_verMais">Ver mais...</button>
+            </section>
+            <hr>
+            
+            <section class="vaga_detalhada">
+                <div class="ocultar_vaga">
+                    <p>Faça <a href="../../index.html" target="_self">login</a> para ver a vaga completa</p>
+                </div>
+                <div id="vaga1" class="vagaDetalhada">
+                    <div class="empresa">
+                        <img src="../../imagens/Microsoft_logo.png" alt="Microsoft Logo">
+                        <span>Microsoft</span>
+                    </div>
+                    <h1>Desenvolvedor de Software</h1>
+                    <p><strong>Local:</strong> <a href="https://www.microsoft.com">Microsoft</a>, São Paulo/São Paulo</p>
+                    <p><strong>Tipo de Contrato:</strong> Tempo Integral</p>
+                    <h2>Resumo da Vaga:</h2>
+                    <p>Estamos à procura de um Desenvolvedor de Software talentoso e motivado para se juntar à nossa equipe de TI. O candidato ideal deve ter sólida experiência em desenvolvimento de software, excelentes habilidades de resolução de problemas e ser capaz de trabalhar em um ambiente dinâmico e colaborativo.</p>
+                    <h3>Responsabilidades:</h3>
+                    <ul>
+                        <li>Desenvolver, testar e implementar soluções de software de alta qualidade.</li>
+                        <li>Colaborar com equipes multidisciplinares para definir, projetar e enviar novas funcionalidades.</li>
+                        <li>Identificar e corrigir problemas de software, garantindo a manutenção de sistemas existentes.</li>
+                        <li>Participar de revisões de código e garantir que as melhores práticas de desenvolvimento sejam seguidas.</li>
+                        <li>Manter-se atualizado com as tecnologias emergentes e aplicá-las para melhorar o software existente.</li>
+                    </ul>
+                    <h3>Requisitos:</h3>
+                    <ul>
+                        <li>Bacharelado em Ciência da Computação, Engenharia de Software ou área relacionada.</li>
+                        <li>Experiência comprovada em desenvolvimento de software (mínimo de 3 anos).</li>
+                        <li>Conhecimento profundo de linguagens de programação como Java, C#, Python, ou JavaScript.</li>
+                        <li>Experiência com frameworks e bibliotecas populares (por exemplo, React, Angular, Spring, .NET).</li>
+                        <li>Familiaridade com metodologias ágeis (Scrum, Kanban).</li>
+                        <li>Excelentes habilidades de comunicação e capacidade de trabalhar em equipe.</li>
+                        <li>Capacidade de gerenciar múltiplas tarefas e trabalhar sob prazos apertados.</li>
+                    </ul>
+                    <h3>Diferenciais:</h3>
+                    <ul>
+                        <li>Experiência com desenvolvimento de aplicativos móveis (iOS, Android).</li>
+                        <li>Conhecimento em DevOps e ferramentas de CI/CD (por exemplo, Jenkins, Docker, Kubernetes).</li>
+                        <li>Experiência com serviços em nuvem (AWS, Azure, Google Cloud).</li>
+                        <li>Certificações relevantes na área de TI.</li>
+                    </ul>
+                    <h3>Benefícios:</h3>
+                    <ul>
+                        <li>Salário competitivo.</li>
+                        <li>Plano de saúde e odontológico.</li>
+                        <li>Vale refeição e/ou alimentação.</li>
+                        <li>Auxílio transporte.</li>
+                        <li>Programa de bônus baseado em desempenho.</li>
+                        <li>Oportunidades de desenvolvimento profissional e contínuo.</li>
+                        <li>Ambiente de trabalho inclusivo e colaborativo.</li>
+                        </ul>
+                        <h2>Como se Candidatar:</h2>
+                        <p>Interessados devem enviar o currículo atualizado e uma carta de apresentação para <a href="mailto:microsoft@luravell.com">microsoft@luravell.com</a> até <strong>data limite</strong>. Por favor, inclua no assunto do e-mail “Candidatura para Desenvolvedor de Software – [Seu Nome]”.</p>
+
+                        <p>Junte-se à Microsoft e impulsione sua carreira na tecnologia! </p>
+
+                        <div class="match">
+                            <span class="requisitos">JavaScript</span>
+                            <span class="requisitos">Python</span>
+                            <span class="requisitos">C#</span>
+                            <span class="requisitos">Java</span>
+                            <span class="requisitos">Scrum</span>
+                            <span class="requisitos">IOS</span>
+                            <span class="requisitos">Android</span>
+                            <span class="requisitos">AWS</span>
+                            <span class="requisitos">React</span>
+                            <span class="requisitos">Curso superior em TI</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div id="links">
+            <a href="https://www.instagram.com/conexconsult/" id="img_insta" target="_blank"><img src="../../imagens/ico_instagram.png" alt="icone instagram"><p>@conexconsult</p></a>
+            <a href="https://twitter.com/ConexConsult"  id="img_twitter" target="_blank"><img src="../../imagens/ico_twitter.png" alt="icone twitter"><p>@ConexConsult</p></a>
+        </div>
+    </footer>
+    <!-- Pop Up -->
+    <div id="myModal" class="modal hideModal">
+        <div class="modal-content">
+        <span class="span-close"><img src="../../imagens/closeButton.png" alt="botão fechar" id="btnClose"></span>
+        <h1>É novo por aqui? Cadastre-se abaixo</h1>
+            <form>
+                <label for="nome">
+                    Nome completo
+                    <input type="text" name="nome" id="nome" oninput="converterParaMaiusculas(event)" oninput="somenteletras(event)">
+                </label>
+                <div id="local" class="campo">
+                    <label id="labelCidade" for="cidade">
+                        Cidade
+                        <input type="text" name="cidade" id="cidade" oninput="converterParaMaiusculas(event)" oninput="somenteletras(event)" >
+                    </label>
+                    <label id="labelUf" for="uf">
+                        UF
+                        <input type="text" name="uf" id="uf" maxlength="2" oninput="converterParaMaiusculas(event)" oninput="somenteletras(event)">
+                        
+                    </label>
+                </div>  
+                <label for="emailCadastro">
+                    E-mail
+                    <input type="email" name="email" id="emailCadastro" autocomplete="email">
+                </label>
+                
+                <label for="senhaCadastro" id="label-senha">
+                    Senha
+                    <div id="campo-senha">
+                        <input id="senhaCadastro" type="password" name="senha" id="senhaCadastro">
+                        <span class="toggle-password-pop" onclick="togglePasswordPopUp()"><img src="../../imagens/visibility_on.png" alt="exibir senha" id="img_visaoSenhaPop"></span>
+                    </div>
+                </label>
+                <label for="confirmarSenha">
+                    Confirmação de senha:
+                    <div id="passwordPop-container">
+                        <input type="password" name="confirmarSenha" id="confirmarSenha">
+                        <span class="toggle-password-pop" onclick="toggleConfirmarPasswordPopUp()"><img src="../../imagens/visibility_on.png" alt="exibir senha" id="img_visaoConfirmarSenhaPop"></span>
+                    </div>
+                    <p id="confirmacao"></p>
+                </label>
+                <input id="btnCadastrar" type="button" value="Cadastrar-se">
+            </form>
+        </div>
+    </div>
+    <script type="module" src="../Js/vagas.js"></script>
+    <script type="module" src="../js/vagasDetalhadas.js"></script>
+    <script src="../Js/popUpCadastro.js"></script>
+</body>
+</html>
