@@ -25,21 +25,20 @@
             <section id="cadastro">
                 <h1>Busque oportunidades de emprego de forma mais eficiente!</h1>
                 <form>
-                    <label for="email">
+                    <label for="email" id="labelEmail">
                         E-mail
-                        <input type="email" name="email" id="email" class="email input" >
+                        <input type="email" name="email" id="email" class="email input" required>
                     </label>
                     <label for="senha">
                         Senha
                         <div id="password-container">
-                            <input id="senha" type="password" name="senha" id="senha" class="senha input">
+                            <input id="senha" type="password" name="senha" id="senha" class="senha input" required>
                             <span class="toggle-password" onclick="togglePassword()"><img src="imagens/visibility_on.png" id="img_visaoSenha" alt="exibir senha"></span>
                         </div>
+                        <div id="areaEsqueciSenha">
+                            <p id="esqueciSenha"><a href="">Esqueci minha senha</a></p>
+                        </div>
                     </label>
-                    <div id="areaEsqueciSenha">
-                        <p id="esqueciSenha"><a href="">Esqueci minha senha</a></p>
-                        
-                    </div>
                     <a >
                         <input type="button" id="btn_entrar"
                         class="input btn"  value="Entrar">

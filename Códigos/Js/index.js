@@ -53,10 +53,22 @@ btn.forEach(e=>{
                 baterSenha = true
             }
         }
+        //required
+        let email = document.querySelector("#email")
+        let senha = document.querySelector("#senha")
         //manda para a URL um true ou false para o paramentro 'login'
         //com esse metodo não é necessário o href nos botões, pois ele tem o seu href
-        if(baterSenha || e.id != "btnCadastrar") {
+        if (e.id == "btn_entrar" && email.value == ""){
+            let p = document.createElement('p')
+            let labelEmail = document.querySelector('#labelEmail')
+            p.setAttribute("class","p_alerta")
+            p.textContent = "Digite um email"
+            labelEmail.appendChild(p)
+            e.setAttribute("disabled","disabled")
+        }
+        if((baterSenha || e.id != "btnCadastrar") && email.value != "" && senha.value != "") {
             window.location.href = '/Códigos/paginas/vagas.html?login=' + loginFeito
         }
     })
+    
 })
