@@ -37,6 +37,8 @@ marginFundo()
 
 
 let btn = [...document.querySelectorAll(".btn")] //botões de ir para página de vagas
+let email = document.querySelector("#email")
+let senha = document.querySelector("#senha")
 btn.forEach(e=>{
     let baterSenha = false
     e.addEventListener('click',()=>{
@@ -53,22 +55,48 @@ btn.forEach(e=>{
                 baterSenha = true
             }
         }
-        //required
-        let email = document.querySelector("#email")
-        let senha = document.querySelector("#senha")
+        //required dos inputs email e senha do index
+        function criarAlerta(text, id) {
+            let p = document.createElement('p')
+            p.setAttribute("class","p_alerta")
+            p.setAttribute("id","p_alerta_"+id)
+            p.textContent = text
+            e.setAttribute("disabled","disabled")
+            return p
+        }
+        if (e.id == "btn_entrar" && email.value == ""){
+            let labelEmail = document.querySelector('#labelEmail')
+            labelEmail.appendChild(criarAlerta("Digite seu e-mail","email"))
+        }
+        if(e.id == "btn_entrar" && senha.value == ""){
+            let inputSenha = document.querySelector('#password-container')
+            inputSenha.insertAdjacentElement('afterend',criarAlerta("Digite sua senha","senha"))
+
+        }
+    
         //manda para a URL um true ou false para o paramentro 'login'
         //com esse metodo não é necessário o href nos botões, pois ele tem o seu href
-        if (e.id == "btn_entrar" && email.value == ""){
-            let p = document.createElement('p')
-            let labelEmail = document.querySelector('#labelEmail')
-            p.setAttribute("class","p_alerta")
-            p.textContent = "Digite um email"
-            labelEmail.appendChild(p)
-            e.setAttribute("disabled","disabled")
-        }
         if((baterSenha || e.id != "btnCadastrar") && email.value != "" && senha.value != "") {
             window.location.href = '/Códigos/paginas/vagas.html?login=' + loginFeito
         }
     })
     
 })
+let inputs = [senha, email]
+inputs.forEach(e=>{
+    e.addEventListener('input',(e)=>{
+        let pEmail = document.querySelector('#p_alerta_email')
+        let pSenha = document.querySelector('#p_alerta_senha')
+        let btn = document.querySelector('#btn_entrar')
+        if(senha.value != "" && email.value != "") {
+            btn.removeAttribute("disabled")
+        }
+        if(e.target.id == "email" && pEmail != null){
+            pEmail.remove(pEmail)
+        }
+        if(e.target.id == "senha" && pSenha != null){
+            pSenha.remove(pSenha)
+        }
+    })
+})
+
