@@ -16,7 +16,7 @@ window.addEventListener('scroll', function() {
     }
 
     lastScrollTop = scrollTop;
-}); 
+});
 
 // Ajuste do margin do fundo conforme o tamanho da tela
 let imgFundo = document.querySelector("#img_fundo")
@@ -56,7 +56,7 @@ btn.forEach(e=>{
         //manda para a URL um true ou false para o paramentro 'login'
         //com esse metodo não é necessário o href nos botões, pois ele tem o seu href
         if(baterSenha || e.id != "btnCadastrar") {
-            window.location.href = '/Códigos/paginas/vagas.html?login=' + loginFeito
+            window.location.href = '/Codigos/paginas/vagas.html?login=' + loginFeito
         }
     })
 })
