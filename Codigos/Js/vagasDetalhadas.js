@@ -65,10 +65,10 @@ let vagasDetalhadas = {
   '</div>',
     2:'<div class="ocultar_vaga"> '+
         '<p>Faça <a href="../../index.html" target="_self">login</a> para ver a vaga completa</p> ' +
-      '</div>' +  
+      '</div>' +
     '<div id="vaga2" class= "vagaDetalhada">' +
     '<div class="empresa">' +
-      '<img src="../../imagens/Google_logo.png" alt="Google Logo">' +
+      '<img src="../../imagens/google_logo.png" alt="Google Logo">' +
       '<span>Google</span>' +
     '</div>' +
     '<h1>Engenheiro de Dados</h1>' +
@@ -126,10 +126,10 @@ let vagasDetalhadas = {
   3:
 '<div class="ocultar_vaga"> '+
         '<p>Faça <a href="../../index.html" target="_self">login</a> para ver a vaga completa</p> ' +
-      '</div>' + 
+      '</div>' +
   '<div id="vaga3" class= "vagaDetalhada">' +
     '<div class="empresa">' +
-      '<img src="../../imagens/Amazon_logo.png" alt="Amazon Logo">' +
+      '<img src="../../imagens/amazon_logo.png" alt="Amazon Logo">' +
       '<span>Amazon</span>' +
     '</div>' +
     '<h1>Arquiteto de Soluções</h1>' +
@@ -186,10 +186,10 @@ let vagasDetalhadas = {
   '</div>',
   4:'<div class="ocultar_vaga"> '+
         '<p>Faça <a href="../../index.html" target="_self">login</a> para ver a vaga completa</p> ' +
-      '</div>' + 
+      '</div>' +
   '<div id="vaga4" class= "vagaDetalhada">' +
     '<div class="empresa">' +
-      '<img src="../../imagens/IBM_logo.png" alt="IBM Logo">' +
+      '<img src="../../imagens/ibm_logo.png" alt="IBM Logo">' +
       '<span>IBM</span>' +
     '</div>' +
     '<h1>Analista de Segurança da Informação</h1>' +
@@ -248,7 +248,7 @@ let vagasDetalhadas = {
       '</div>' +
   '<div id="vaga5" class="vagaDetalhada">' +
     '<div class="empresa">' +
-      '<img src="../../imagens/Google_logo.png" alt="Google Logo">' +
+      '<img src="../../imagens/google_logo.png" alt="Google Logo">' +
       '<span>Google</span>' +
     '</div>' +
     '<h1>Desenvolvedor Front-End</h1>' +
@@ -313,7 +313,7 @@ let vagasDetalhadas = {
       '</div>' +
   '<div id="vaga6" class="vagaDetalhada">' +
     '<div class="empresa">' +
-      '<img src="../../imagens/Facebook_logo.png" alt="Facebook Logo">' +
+      '<img src="../../imagens/facebook_logo.png" alt="Facebook Logo">' +
       '<span>Facebook</span>' +
     '</div>' +
     '<h1>Engenheiro de Software</h1>' +
@@ -378,7 +378,7 @@ let vagasDetalhadas = {
       '</div>' +
   '<div id="vaga4" class="vagaDetalhada">' +
     '<div class="empresa">' +
-      '<img src="../../imagens/Amazon_logo.png" alt="Amazon Logo">' +
+      '<img src="../../imagens/amazon_logo.png" alt="Amazon Logo">' +
       '<span>Amazon</span>' +
     '</div>' +
     '<h1>Desenvolvedor Back-End</h1>' +
@@ -444,7 +444,7 @@ let vagasDetalhadas = {
       '</div>' +
   '<div id="vaga5" class="vagaDetalhada">' +
     '<div class="empresa">' +
-      '<img src="../../imagens/Netflix_logo.png" alt="Netflix Logo">' +
+      '<img src="../../imagens/netflix_logo.png" alt="Netflix Logo">' +
       '<span>Netflix</span>' +
     '</div>' +
     '<h1>Analista de Dados</h1>' +
